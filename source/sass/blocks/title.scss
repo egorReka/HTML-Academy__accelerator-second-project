@@ -1,0 +1,14 @@
+.title {
+  font-family: var(--font-family);
+  line-height: 100%;
+  font-size: 30px;
+  font-weight: 800;
+
+  &--primary {
+    font-size: 26px;
+  }
+
+  &--secondary {
+    font-size: 22px;
+  }
+}

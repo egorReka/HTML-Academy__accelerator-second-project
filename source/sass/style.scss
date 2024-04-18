@@ -1,4 +1,16 @@
-// Vendor
-// ---------------------------------
+/* GLOBAL */
+@import "./bootstrap";
+@import "./global/global";
+@import "./global/fonts";
+@import "./global/visually-hidden";
 
-@import "vendor/normalize";
+/* BLOCKS */
+@import "./blocks/page.scss";
+@import "./blocks/container.scss";
+@import "./blocks/title.scss";
+@import "./blocks/subtitle.scss";
+// @import "./blocks/button";
+// @import "./blocks/link";
+
+
+

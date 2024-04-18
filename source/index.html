@@ -1,31 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Путешествия с LIFETOUR">
+  <meta name="description"
+    content="Туристическое агентство, организация путешествий, походов, поездкок, восхождений в удивительные места нашей страны.">
+  <title>LIFETOUR</title>
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="icon" sizes="32x32" href="favicons/favicon.png" type="image/png">
+  <link rel="manifest" crossorigin="use-credentials" href="manifest.webmanifest">
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page__body">
+
+  <header class="header" data-test="header">header</header>
+
+  <main>
+    <section class="hero" data-test="hero">hero</section>
+    <section class="tours" data-test="tours">tours</section>
+    <section class="training" data-test="training">training</section>
+    <section class="about" data-test="about">about</section>
+    <section class="reviews" data-test="reviews">reviews</section>
+    <section class="adv" data-test="adv">adv</section>
+    <section class="gallery" data-test="gallery">gallery</section>
+    <section class="form" data-test="form">form</section>
+  </main>
+
+  <footer class="footer" data-test="footer">footer</footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
+
+
+
+<!-- пример использования спрайта -->
+<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+  <svg>
+    <use href="/__spritemap#sprite-user"></use>
+  </svg> -->

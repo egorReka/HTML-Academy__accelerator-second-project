@@ -1,0 +1,40 @@
+// Width
+$width-phone: 320px;
+$width-tablet: 768px;
+$width-desktop: 1440px;
+
+// Padding
+$padding-phone: 15px;
+$padding-tablet: 45px;
+$padding-desktop: 120px;
+
+// Color
+$basic-grey: #2D383F;
+$basic-light-grey: #999999;
+$basic-red: #FF121F;
+$basic-blue: #1C3374;
+$basic-light-blue: #0266C1;
+$basic-white: #FFFFFF;
+$basic-black: #000000;
+$alt-black: #030A1A;
+
+:root {
+  // Font familie
+  --font-family: "Montserrat", "Arial", sans-serif;
+
+  // Color
+	--primary: $basic-grey;
+	--error: $basic-red;
+	--active: $basic-blue;
+	--stroke-br: rgba($basic-grey, 0.2);
+	--disabled: $basic-light-grey;
+	--white-100: $basic-white;
+	--white-20: rgba($basic-white, 0.2);
+	--white-50: rgba($basic-white, 0.5);
+	--white-10: rgba($basic-white, 0.1);
+	--additional-100: $basic-light-blue;
+	--additional-20: rgba($basic-light-blue, 0.1);
+	--additional-10: rgba($basic-light-blue, 0.1);
+	--overlay-50: rgba($basic-black, 0.5);
+	--dark: $alt-black;
+}

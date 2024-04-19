@@ -13,7 +13,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
-  // color: var(--primary);
+  color: var(--primary);
+  background-color: var(--white-100);
 
   @include media-tablet {
     font-size: 16px;

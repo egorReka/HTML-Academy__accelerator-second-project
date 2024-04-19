@@ -23,18 +23,18 @@ $alt-black: #030A1A;
   --font-family: "Montserrat", "Arial", sans-serif;
 
   // Color
-	--primary: $basic-grey;
-	--error: $basic-red;
-	--active: $basic-blue;
-	--stroke-br: rgba($basic-grey, 0.2);
-	--disabled: $basic-light-grey;
-	--white-100: $basic-white;
-	--white-20: rgba($basic-white, 0.2);
-	--white-50: rgba($basic-white, 0.5);
-	--white-10: rgba($basic-white, 0.1);
-	--additional-100: $basic-light-blue;
-	--additional-20: rgba($basic-light-blue, 0.1);
-	--additional-10: rgba($basic-light-blue, 0.1);
-	--overlay-50: rgba($basic-black, 0.5);
-	--dark: $alt-black;
+	--primary: #{$basic-grey};
+	--error: #{$basic-red};
+	--active: #{$basic-blue};
+	--stroke-br: #{rgba($basic-grey, 0.2)};
+	--disabled: #{$basic-light-grey};
+	--white-100: #{$basic-white};
+	--white-20: #{rgba($basic-white, 0.2)};
+	--white-50: #{rgba($basic-white, 0.5)};
+	--white-10: #{rgba($basic-white, 0.1)};
+	--additional-100: #{$basic-light-blue};
+	--additional-20: #{rgba($basic-light-blue, 0.1)};
+	--additional-10: #{rgba($basic-light-blue, 0.1)};
+	--overlay-50: #{rgba($basic-black, 0.5)};
+	--dark: #{$alt-black};
 }

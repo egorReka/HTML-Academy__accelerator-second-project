@@ -16,20 +16,49 @@
 
 <body class="page__body">
 
-  <header class="header" data-test="header">header</header>
+  <header class="header" data-test="header">
+    <div class="header__container">
+      <button class="header__burger" type="button" aria-label="Открыть меню">
+        <span class="header__burger-line"></span>
+      </button>
 
-  <main>
-    <section class="hero" data-test="hero">hero</section>
-    <section class="tours" data-test="tours">tours</section>
-    <section class="training" data-test="training">training</section>
-    <section class="about" data-test="about">about</section>
-    <section class="reviews" data-test="reviews">reviews</section>
-    <section class="adv" data-test="adv">adv</section>
-    <section class="gallery" data-test="gallery">gallery</section>
+      <div class="header__wrapper">
+        <img class="header__logo" src="img/logo.svg" width="142" height="42" alt="LIFETOUR">
+
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#tours">Туры</a></li>
+            <li class="nav__item"><a class="nav__link" href="#training">Обучение</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#gallery">Фотографии</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero" data-test="hero">
+
+    </section>
+
+    <section class="tours" id="tours" data-test="tours">tours</section>
+    <section class="training" id="training" data-test="training">training</section>
+    <section class="about" id="about" data-test="about">about</section>
+    <section class="reviews" id="reviews" data-test="reviews">reviews</section>
+    <section class="adv" id="adv" data-test="adv">adv</section>
+    <section class="gallery" id="gallery" data-test="gallery">gallery</section>
     <section class="form" data-test="form">form</section>
   </main>
 
-  <footer class="footer" data-test="footer">footer</footer>
+  <footer class="footer" data-test="footer">
+    <section class="contact" id="contact"></section>
+  </footer>
 
   <script type="module" src="js/main.js"></script>
 </body>

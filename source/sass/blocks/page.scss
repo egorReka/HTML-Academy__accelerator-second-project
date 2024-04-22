@@ -8,8 +8,7 @@
   display: grid;
   min-block-size: 100%;
   grid-template-rows: auto 1fr;
-
-  font-family: var(--font-family);
+  font-family: $font-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;

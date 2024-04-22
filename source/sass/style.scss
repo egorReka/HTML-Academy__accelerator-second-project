@@ -5,15 +5,17 @@
 @import "./global/visually-hidden";
 
 /* BLOCKS */
-@import "./blocks/page.scss";
-@import "./blocks/container.scss";
-@import "./blocks/title.scss";
-@import "./blocks/subtitle.scss";
+@import "./blocks/page";
+@import "./blocks/container";
+@import "./blocks/title";
+@import "./blocks/subtitle";
+
 // @import "./blocks/button";
 // @import "./blocks/link";
 
-@import "./blocks/header/header.scss";
-@import "./blocks/header/nav.scss";
-
-
-
+@import "./blocks/header/header";
+@import "./blocks/header/nav";
+@import "./blocks/hero/hero";
+@import "./blocks/hero/hero-swiper";
+@import "./blocks/hero/hero-card";
+@import "./blocks/hero/hero-pagination";

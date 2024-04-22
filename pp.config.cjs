@@ -1,6 +1,6 @@
 const desktopSections = [
-  {section: 'header', misMatchThreshold: 1.1},
-  // {section: 'hero', misMatchThreshold: 0.4},
+  // {section: 'header', misMatchThreshold: 1.1},
+  {section: 'hero', misMatchThreshold: 0.4},
   // {section: 'tours', misMatchThreshold: 0.7},
   // {section: 'training', misMatchThreshold: 2.1},
   // {section: 'about', misMatchThreshold: 1.5},
@@ -12,8 +12,8 @@ const desktopSections = [
 ]
 
 const tabletSections = [
-  {section: 'header', misMatchThreshold: 1.3},
-  // {section: 'hero', misMatchThreshold: 0.8},
+  // {section: 'header', misMatchThreshold: 1.3},
+  {section: 'hero', misMatchThreshold: 0.8},
   // {section: 'tours', misMatchThreshold: 1.1},
   // {section: 'training', misMatchThreshold: 3.5},
   // {section: 'about', misMatchThreshold: 3.5},
@@ -25,8 +25,8 @@ const tabletSections = [
 ]
 
 const mobileSections = [
-  {section: 'header', misMatchThreshold: 2.2},
-  // {section: 'hero', misMatchThreshold: 1.2},
+  // {section: 'header', misMatchThreshold: 2.2},
+  {section: 'hero', misMatchThreshold: 1.2},
   // {section: 'tours', misMatchThreshold: 2.2},
   // {section: 'training', misMatchThreshold: 4.3},
   // {section: 'about', misMatchThreshold: 3.5},

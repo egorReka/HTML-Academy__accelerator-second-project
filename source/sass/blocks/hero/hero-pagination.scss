@@ -1,0 +1,35 @@
+.hero-pagination.swiper-pagination {
+  @include reset-list;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+
+  --swiper-pagination-bullet-size: 15px;
+  --swiper-pagination-color: var(--white-100);
+  --swiper-pagination-bullet-inactive-color: transparent;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 0px;
+  --swiper-pagination-bullet-vertical-gap: 0px;
+  --swiper-pagination-bottom: 40px;
+
+
+  @include media-tablet {
+    --swiper-pagination-bullet-size: 19px;
+    --swiper-pagination-bottom: 42px;
+  }
+
+  @include media-desktop {
+    position: absolute;
+    justify-content: flex-end;
+    padding-right: $padding-desktop;
+
+    --swiper-pagination-bottom: 94px;
+  }
+}
+
+// TODO состояния точки, нужны?
+.swiper-pagination-bullet {
+  outline: 1px solid var(--white-100);
+}

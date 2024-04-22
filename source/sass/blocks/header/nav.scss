@@ -9,13 +9,16 @@
   }
 
   @include media-desktop {
+    max-height: none;
     padding: 0;
     background-color: transparent;
+    overflow-y: visible;
   }
 }
 
 .nav__list {
   @include reset-list;
+
   display: grid;
   justify-content: flex-start;
   row-gap: 16px;
@@ -35,6 +38,7 @@
 
 .nav__link {
   @include reset-link;
+
   display: block;
   padding: 3px 5px;
   font-size: 14px;
@@ -76,7 +80,6 @@
   @include media-desktop {
     font-weight: 400;
     text-transform: none;
-    letter-spacing: 0.007rem;;
+    letter-spacing: 0.007rem;
   }
 }
-

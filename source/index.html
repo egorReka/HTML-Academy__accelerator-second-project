@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="title" content="Путешествия с LIFETOUR">
-  <meta name="description"
-    content="Туристическое агентство, организация путешествий, походов, поездкок, восхождений в удивительные места нашей страны.">
+  <meta name="description" content="Туристическое агентство - организация путешествий, походов, поездок, восхождений.">
   <title>LIFETOUR</title>
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="icon" sizes="32x32" href="favicons/favicon.png" type="image/png">
@@ -18,6 +17,7 @@
 
   <header class="header" data-test="header">
     <div class="header__container">
+
       <button class="header__burger" type="button" aria-label="Открыть меню">
         <span class="header__burger-line"></span>
       </button>
@@ -42,21 +42,86 @@
     </div>
   </header>
 
-  <main class="main">
+  <main class="page__main">
     <section class="hero" data-test="hero">
+      <h1 class="visually-hidden">Путешествия с LIFETOUR</h1>
+
+      <div class="hero__container hero-swiper swiper">
+
+        <ul class="hero-swiper__list swiper-wrapper">
+
+          <li class="hero-swiper__slide swiper-slide">
+            <div class="hero-card hero-card--caucas">
+              <div class="hero-card__content">
+                <h2>Захватывающие вершины Кавказа</h2>
+                <p>В сопровождении опытных гидов вы пройдёте через&nbsp;потрясающие ландшафты и совершите восход
+                  на&nbsp;вершину
+                  горы
+                  Чегет.</p>
+              </div>
+              <div class="hero-card__footer">
+                <a class="hero-card__button button" href="#!">Смотреть тур</a>
+                <ul class="hero-card__details">
+                  <li class="hero-card__detail hero-card__detail--moon">6 дней/5 ночей</li>
+                  <li class="hero-card__detail hero-card__detail--level">Высокая сложность</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="hero-swiper__slide swiper-slide">
+            <div class="hero-card hero-card--kamchatka">
+              <div class="hero-card__content">
+                <h2>Невероятная природа Камчатки</h2>
+                <p>Незабываемое приключение, во время которого вы&nbsp;отправитесь в путешествие по одному из самых
+                  нетронутых
+                  уголков дикой природы в мире.</p>
+              </div>
+              <div class="hero-card__footer">
+                <a class="hero-card__button button" href="#!">Смотреть тур</a>
+                <ul class="hero-card__details">
+                  <li class="hero-card__detail hero-card__detail--moon">9 дней/10 ночей</li>
+                  <li class="hero-card__detail hero-card__detail--level">Средняя сложность</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="hero-swiper__slide swiper-slide">
+            <div class="hero-card hero-card--altai">
+              <div class="hero-card__content">
+                <h2>Магические пейзажи Алтайского Края</h2>
+                <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и&nbsp;захватывающих
+                  дух
+                  ландшафтов Алтайских гор.</p>
+              </div>
+              <div class="hero-card__footer">
+                <a class="hero-card__button button" href="#!">Смотреть тур</a>
+                <ul class="hero-card__details">
+                  <li class="hero-card__detail hero-card__detail--moon">8 дней/7 ночей</li>
+                  <li class="hero-card__detail hero-card__detail--level">Лёгкая сложность</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <ul class="hero__pagination hero-pagination swiper-pagination"></ul>
 
     </section>
 
-    <section class="tours" id="tours" data-test="tours">tours</section>
+    <!-- <section class="tours" id="tours" data-test="tours">tours</section>
     <section class="training" id="training" data-test="training">training</section>
     <section class="about" id="about" data-test="about">about</section>
     <section class="reviews" id="reviews" data-test="reviews">reviews</section>
     <section class="adv" id="adv" data-test="adv">adv</section>
     <section class="gallery" id="gallery" data-test="gallery">gallery</section>
-    <section class="form" data-test="form">form</section>
+    <section class="form" data-test="form">form</section> -->
   </main>
 
-  <footer class="footer" data-test="footer">
+  <footer class="footer" data-test="footer" style="min-height: 100vh;">
     <section class="contact" id="contact"></section>
   </footer>
 
@@ -72,3 +137,11 @@
   <svg>
     <use href="/__spritemap#sprite-user"></use>
   </svg> -->
+
+<!-- background-image: -->
+<!-- image-set(
+        url("../img/price/plates@2x.webp") type("image/webp") 2x,
+        url("../img/price/plates@1x.webp") type("image/webp") 1x,
+        url("../img/price/plates@2x.png") 2x,
+        url("../img/price/plates@1x.png") 1x
+        ); -->

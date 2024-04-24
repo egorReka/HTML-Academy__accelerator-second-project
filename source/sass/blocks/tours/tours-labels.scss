@@ -1,0 +1,58 @@
+.tours-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 5px;
+}
+
+.tours-labels__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 14px;
+}
+
+.tours-labels__item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+
+  &::before {
+    display: block;
+    min-width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+  }
+
+  &--pin {
+    min-height: 28px;
+    padding: 6px 12px;
+    background-color: var(--additional-100);
+
+    &::before {
+      min-width: 16px;
+      height: 16px;
+      margin-right: 6px;
+      background-image: url("/__spritemap#sprite-pin-filled-view");
+    }
+  }
+
+  &--day {
+    &::before {
+      background-image: url("/__spritemap#sprite-sun-view");
+    }
+  }
+
+  &--night {
+    &::before {
+      background-image: url("/__spritemap#sprite-moon-view");
+    }
+  }
+}

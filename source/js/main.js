@@ -5,6 +5,8 @@ import 'swiper/css/pagination';
 
 import { toggleNav } from './nav';
 import { initSwiperHiro } from './swiper-hero';
+import { initSwiperTours } from './tours-swiper';
 
 toggleNav();
 initSwiperHiro(Swiper, Pagination);
+initSwiperTours(Swiper, Navigation);

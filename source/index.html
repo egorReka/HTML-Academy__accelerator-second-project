@@ -112,13 +112,202 @@
 
     </section>
 
-    <!-- <section class="tours" id="tours" data-test="tours">tours</section>
-    <section class="training" id="training" data-test="training">training</section>
+    <div class="page__wrapper">
+      <section class="tours" id="tours" data-test="tours">
+        <div class="tours__container container">
+          <div class="tours__header">
+            <h2 class="tours__title title title--secondary" data-content="Ближайшие туры">Ближайшие туры</h2>
+            <div class="tours__buttons">
+              <button class="tours__button tours__button--prev button button--arrow" type="button"
+                aria-label="Предыдущий тур"></button>
+              <button class="tours__button tours__button--next button button--arrow" type="button"
+                aria-label="Следующий тур"></button>
+            </div>
+          </div>
+          <div class="tours-swiper swiper">
+            <ul class="tours-swiper__list swiper-wrapper">
+              <li class="tours-swiper__item swiper-slide">
+                <article class="tours-card">
+                  <div class="tours-card__image-wrapper">
+                    <picture>
+                      <source srcset="img/tours/tours-slide-1@1x.webp 1x, img/tours/tours-slide-1@2x.webp 2x"
+                        type="image/webp" width="290" height="416">
+                      <img class="tours-card__image" src="img/tours/tours-slide-1@1x.jpg"
+                        srcset="img/tours/tours-slide-1@2x.jpg 2x" width="290" height="416" alt="Горы Кавказа."
+                        loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="tours-card__content">
+                    <div class="tours-card__labels tours-labels">
+                      <b class="tours-labels__item tours-labels__item--pin">Кавказ</b>
+                      <ul class="tours-labels__list">
+                        <li class="tours-labels__item tours-labels__item--day">4 дня</li>
+                        <li class="tours-labels__item tours-labels__item--night">3 ночи</li>
+                      </ul>
+                    </div>
+                    <div class="tours-card__body">
+                      <h3 class="tours-card__title">Путешествие вокруг&nbsp;Эльбруса</h3>
+                      <dl class="tours-card__details tours-details">
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Сложность:</dt>
+                          <dd class="tours-details__value tours-details__stars tours-details__stars--four">
+                            <span class="visually-hidden">Высокая</span>
+                          </dd>
+                        </div>
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Даты набора:</dt>
+                          <dd class="tours-details__value">12.06–19.06</dd>
+                        </div>
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Группа:</dt>
+                          <dd class="tours-details__value">до 15 чел.</dd>
+                        </div>
+                      </dl>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="tours-swiper__item swiper-slide">
+                <article class="tours-card">
+                  <div class="tours-card__image-wrapper">
+                    <picture>
+                      <source srcset="img/tours/tours-slide-2@1x.webp 1x, img/tours/tours-slide-2@2x.webp 2x"
+                        type="image/webp" width="290" height="416">
+                      <img class="tours-card__image" src="img/tours/tours-slide-2@1x.jpg"
+                        srcset="img/tours/tours-slide-2@2x.jpg 2x" width="290" height="416" alt="Горы Алтая."
+                        loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="tours-card__content">
+                    <div class="tours-card__labels tours-labels">
+                      <b class="tours-labels__item tours-labels__item--pin">Алтай</b>
+                      <ul class="tours-labels__list">
+                        <li class="tours-labels__item tours-labels__item--day">14 дней</li>
+                        <li class="tours-labels__item tours-labels__item--night">13 ночей</li>
+                      </ul>
+                    </div>
+                    <div class="tours-card__body">
+                      <h3 class="tours-card__title">Путь к подножию Белухи</h3>
+                      <dl class="tours-card__details tours-details">
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Сложность:</dt>
+                          <dd class="tours-details__value tours-details__stars tours-details__stars--three">
+                            <span class="visually-hidden">Средняя</span>
+                          </dd>
+                        </div>
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Даты набора:</dt>
+                          <dd class="tours-details__value">14.06–23.06</dd>
+                        </div>
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Группа:</dt>
+                          <dd class="tours-details__value">до 25 чел.</dd>
+                        </div>
+                      </dl>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="tours-swiper__item swiper-slide">
+                <article class="tours-card">
+                  <div class="tours-card__image-wrapper">
+                    <picture>
+                      <source srcset="img/tours/tours-slide-3@1x.webp 1x, img/tours/tours-slide-3@2x.webp 2x"
+                        type="image/webp" width="290" height="416">
+                      <img class="tours-card__image" src="img/tours/tours-slide-3@1x.jpg"
+                        srcset="img/tours/tours-slide-3@2x.jpg 2x" width="290" height="416" alt="Горы Адыгеи."
+                        loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="tours-card__content">
+                    <div class="tours-card__labels tours-labels">
+                      <b class="tours-labels__item tours-labels__item--pin">Адыгея</b>
+                      <ul class="tours-labels__list">
+                        <li class="tours-labels__item tours-labels__item--day">7 дней</li>
+                        <li class="tours-labels__item tours-labels__item--night">6 ночей</li>
+                      </ul>
+                    </div>
+                    <div class="tours-card__body">
+                      <h3 class="tours-card__title">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                      <dl class="tours-card__details tours-details">
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Сложность:</dt>
+                          <dd class="tours-details__value tours-details__stars tours-details__stars--four">
+                            <span class="visually-hidden">Высокая</span>
+                          </dd>
+                        </div>
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Даты набора:</dt>
+                          <dd class="tours-details__value">15.07–19.07</dd>
+                        </div>
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Группа:</dt>
+                          <dd class="tours-details__value">до 22 чел.</dd>
+                        </div>
+                      </dl>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="tours-swiper__item swiper-slide">
+                <article class="tours-card">
+                  <div class="tours-card__image-wrapper">
+                    <picture>
+                      <source srcset="img/tours/tours-slide-4@1x.webp 1x, img/tours/tours-slide-4@2x.webp 2x"
+                        type="image/webp" width="290" height="416">
+                      <img class="tours-card__image" src="img/tours/tours-slide-4@1x.jpg"
+                        srcset="img/tours/tours-slide-4@2x.jpg 2x" width="290" height="416" alt="Горы Урала."
+                        loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="tours-card__content">
+                    <div class="tours-card__labels tours-labels">
+                      <b class="tours-labels__item tours-labels__item--pin">Урал</b>
+                      <ul class="tours-labels__list">
+                        <li class="tours-labels__item tours-labels__item--day">9 дней</li>
+                        <li class="tours-labels__item tours-labels__item--night">10 ночей</li>
+                      </ul>
+                    </div>
+                    <div class="tours-card__body">
+                      <h3 class="tours-card__title">Восхождение Манарага</h3>
+                      <dl class="tours-card__details tours-details">
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Сложность:</dt>
+                          <dd class="tours-details__value tours-details__stars tours-details__stars--five">
+                            <span class="visually-hidden">Очень высокая</span>
+                          </dd>
+                        </div>
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Даты набора:</dt>
+                          <dd class="tours-details__value">12.07–19.07</dd>
+                        </div>
+                        <div class="tours-details__group">
+                          <dt class="tours-details__title">Группа:</dt>
+                          <dd class="tours-details__value">до 7 чел.</dd>
+                        </div>
+                      </dl>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <a class="tours__link" href="#!">Показать все туры</a>
+        </div>
+      </section>
+
+      <section class="training" id="training" data-test="training" style="height: 300px; width: 100%;">training
+      </section>
+    </div>
+
+
+
+
     <section class="about" id="about" data-test="about">about</section>
     <section class="reviews" id="reviews" data-test="reviews">reviews</section>
     <section class="adv" id="adv" data-test="adv">adv</section>
     <section class="gallery" id="gallery" data-test="gallery">gallery</section>
-    <section class="form" data-test="form">form</section> -->
+    <section class="form" data-test="form">form</section>
   </main>
 
   <footer class="footer" data-test="footer" style="min-height: 100vh;">
@@ -145,3 +334,6 @@
         url("../img/price/plates@2x.png") 2x,
         url("../img/price/plates@1x.png") 1x
         ); -->
+
+
+<!-- TODO удалить favicon webp -->

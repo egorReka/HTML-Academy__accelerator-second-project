@@ -1,0 +1,16 @@
+.tours-swiper {
+  width: 290px;
+  height: auto;
+
+  @include media-tablet {
+    width: 678px;
+  }
+
+  @include media-desktop {
+    width: 1200px;
+  }
+}
+
+.tours-swiper__list {
+  @include reset-list;
+}

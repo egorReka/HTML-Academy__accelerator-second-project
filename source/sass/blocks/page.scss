@@ -20,3 +20,41 @@
     line-height: 150%;
   }
 }
+
+.page__wrapper {
+  position: relative;
+  overflow: hidden;
+
+    &::before {
+    position: absolute;
+    top: 10px;
+    right: -205px;
+    display: block;
+    width: 346px;
+    height: 595px;
+    background-image: url("../../img/background-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    z-index: -1;
+    content: "";
+  }
+
+  @include media-tablet {
+    &::before {
+      top: -92px;
+      right: -177px;
+      width: 602px;
+      height: 1630px;
+      background-image: url("../../img/background-tablet@x1.png");
+    }
+  }
+
+  @include media-desktop {
+    &::before {
+      top: -126px;
+      right: 0;
+      background-image: url("../../img/background-desktop@1x.png");
+    }
+  }
+}

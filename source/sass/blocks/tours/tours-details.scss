@@ -1,0 +1,79 @@
+.tours-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px 7px;
+  margin: 0;
+  padding: 0;
+}
+
+.tours-details__group {
+  display: grid;
+  row-gap: 4px;
+}
+
+.tours-card__body {
+  display: grid;
+  row-gap: 15px;
+
+  &::before {
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: var(--white-100);
+    opacity: 0.2;
+    content: "";
+  }
+}
+
+.tours-details__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.tours-details__value {
+  align-self: flex-end;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+}
+
+.tours-details__stars {
+  width: 84px;
+  height: 16px;
+
+  background-image: url('/__spritemap#sprite-stars-filled-view');
+  background-size: 84px 16px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+
+  mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white 0%, transparent 0%);
+  mask-size: 84px 16px;
+  mask-repeat: no-repeat;
+  mask-position: 0px center;
+
+  &--one {
+    mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white calc(16px * 1), transparent 0%);
+  }
+
+  &--two {
+    mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white calc(16px * 2), transparent 0%);
+  }
+
+  &--three {
+    mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white calc(16px * 3), transparent 0%);
+  }
+
+  &--four {
+    mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white calc(16px * 4), transparent 0%);
+  }
+
+  &--five {
+    mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white calc(16px * 5), transparent 0%);
+  }
+}

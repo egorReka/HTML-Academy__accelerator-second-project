@@ -1,0 +1,136 @@
+.tours {
+  padding: 20px 0;
+
+  @include media-tablet {
+    padding: 40px 0;
+  }
+
+  @include media-desktop {
+    padding: 100px 0;
+  }
+}
+
+.tours__container {
+  display: grid;
+  row-gap: 25px;
+
+  @include media-desktop {
+    row-gap: 50px;
+  }
+}
+
+.tours__header {
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 16px;
+  }
+}
+
+.tours__title {
+  margin: 18px 0 15px;
+
+  @include media-tablet {
+    margin: 20px 0 10px;
+  }
+
+  @include media-desktop {
+    margin: 23px 0 0;
+  }
+}
+
+.tours__buttons {
+  display: none;
+
+  @include media-tablet {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 4px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 3px;
+  }
+}
+
+.tours__button {
+  position: relative;
+  display: block;
+  width: 37px;
+  height: 35px;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+}
+
+.tours__link {
+  @include reset-link;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 28px 10px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    transform: translateY(-50%);
+    display: block;
+    width: 10px;
+    height: 14px;
+    mask-image: url("/__spritemap#sprite-arrow-link-view");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    background-color: var(--primary);
+    content: "";
+  }
+
+  &:hover {
+    color: var(--additional-20);
+
+    &::after {
+      background-color: var(--additional-20);
+    }
+  }
+
+  &:focus {
+    color: var(--additional-100);
+
+    &::after {
+      background-color: var(--additional-100);
+    }
+  }
+
+  &:active {
+    color: var(--active);
+
+    &::after {
+      background-color: var(--active);
+    }
+  }
+
+  &:disabled,
+  &:not([href]) {
+    color: var(--disabled);
+    pointer-events: none;
+
+    &::after {
+      background-color: var(--disabled);
+    }
+  }
+
+  @include media-tablet {
+    font-size: 16px;
+  }
+
+  @include media-desktop {
+    margin: 3px auto 0;
+  }
+}

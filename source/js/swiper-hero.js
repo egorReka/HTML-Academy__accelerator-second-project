@@ -7,7 +7,7 @@ const initSwiperHiro = (Swiper, Pagination) => {
     modules: [Pagination],
     loop: true,
     simulateTouch: false,
-    calculateHeight:true,
+    calculateHeight: true,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',

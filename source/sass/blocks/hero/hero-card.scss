@@ -183,36 +183,6 @@
   display: block;
   max-width: 250px;
   padding: 20px 34px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  text-align: center;
-  color: var(--white-100);
-  background-color: var(--additional-100);
-  transition: 0.2s background-color ease-in-out, 0.2s outline ease-in-out, 0.3s color ease-in-out;
-
-  &:hover {
-    background-color: var(--white-100);
-    outline: 1px solid var(--active);
-    color: var(--active);
-  }
-
-  &:focus-visible {
-    background-color: var(--white-100);
-    color: var(--active);
-  }
-
-  &:active {
-    background: var(--active);
-    color: var(--white-100);
-  }
-
-  &:disabled,
-  &:not([type="button"]):not([type="submit"]):not([href]) {
-    background-color: var(--disabled);
-    color: var(--white-100);
-    pointer-events: none;
-  }
 }
 
 .hero-card__details {

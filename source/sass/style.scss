@@ -9,13 +9,17 @@
 @import "./blocks/container";
 @import "./blocks/title";
 @import "./blocks/subtitle";
+@import "./blocks/button";
 
-// @import "./blocks/button";
-// @import "./blocks/link";
-
+/* LAYOUT */
 @import "./blocks/header/header";
 @import "./blocks/header/nav";
 @import "./blocks/hero/hero";
 @import "./blocks/hero/hero-swiper";
 @import "./blocks/hero/hero-card";
 @import "./blocks/hero/hero-pagination";
+@import "./blocks/tours/tours";
+@import "./blocks/tours/tours-swiper";
+@import "./blocks/tours/tours-card";
+@import "./blocks/tours/tours-details";
+@import "./blocks//tours/tours-labels.scss";

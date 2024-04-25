@@ -1,0 +1,24 @@
+.training-swiper {
+  width: 290px;
+  height: auto;
+
+  @include media-tablet {
+    width: 678px;
+  }
+
+  @include media-desktop {
+    width: 1200px;
+  }
+}
+
+.training-swiper__list {
+  @include reset-list;
+}
+
+.training-swiper__list.swiper-wrapper {
+  align-items: stretch;
+}
+
+.training-swiper__item.swiper-slide {
+  height: auto;
+}

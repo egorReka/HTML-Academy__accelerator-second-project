@@ -43,6 +43,7 @@
   </header>
 
   <main class="page__main">
+
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Путешествия с LIFETOUR</h1>
 
@@ -115,8 +116,10 @@
     <div class="page__wrapper">
       <section class="tours" id="tours" data-test="tours">
         <div class="tours__container container">
+
           <div class="tours__header">
             <h2 class="tours__title title title--secondary" data-content="Ближайшие туры">Ближайшие туры</h2>
+
             <div class="tours__buttons">
               <button class="tours__button tours__button--prev button button--arrow" type="button"
                 aria-label="Предыдущий тур"></button>
@@ -124,6 +127,7 @@
                 aria-label="Следующий тур"></button>
             </div>
           </div>
+
           <div class="tours-swiper swiper">
             <ul class="tours-swiper__list swiper-wrapper">
               <li class="tours-swiper__item swiper-slide">
@@ -296,10 +300,235 @@
         </div>
       </section>
 
-      <section class="training" id="training" data-test="training" style="height: 300px; width: 100%;">training
-      </section>
-    </div>
+      <section class="training" id="training" data-test="training">
 
+        <div class="training__container container">
+          <div class="training__header">
+            <h2 class="training__title title title--secondary" data-content="Обучение">Обучение</h2>
+
+            <div class="training__text">
+              <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных
+                маршрутов
+                Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+            </div>
+          </div>
+
+          <div class="training__wrapper">
+
+            <div class="training__content">
+              <h3 class="training__subtitle title title--secondary">Наши инструкторы</h3>
+
+              <div class="training__buttons">
+                <button class="training__button training__button--prev button button--arrow" type="button"
+                  aria-label="Предыдущий слайд"></button>
+                <button class="training__button training__button--next button button--arrow" type="button"
+                  aria-label="Следующий слайд"></button>
+              </div>
+            </div>
+
+            <div class="training-swiper swiper">
+
+              <ul class="training-swiper__list swiper-wrapper">
+
+                <li class="training-swiper__item swiper-slide">
+                  <article class="training-card">
+
+                    <div class="training-card__image-wrapper">
+                      <picture>
+                        <source srcset="img/training/trainer-1@1x.webp 1x, img/training/trainer-1@2x.webp 2x"
+                          type="image/webp" width="290" height="416">
+                        <img class="training-card__image" src="img/training/trainer-1@1x.jpg"
+                          srcset="img/training/trainer-1@2x.jpg 2x" width="290" height="416" alt="Фото инструктора."
+                          loading="lazy">
+                      </picture>
+                    </div>
+
+                    <div class="training-card__wrapper">
+                      <h4>Александр Прокофьев</h4>
+
+                      <a class="training-card__link" href="#!">
+                        <svg class="training-card__link-icon" role="img" width="14" height="8"
+                          aria-label="Страница в Вконтакте.">
+                          <use href="/__spritemap#sprite-vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="training-card__text">
+                      <p>Строгий и внимательный инструктор, весёлый и&nbsp;общительный человек. Любит природу.</p>
+                    </div>
+
+                  </article>
+                </li>
+
+                <li class="training-swiper__item swiper-slide">
+                  <article class="training-card">
+
+                    <div class="training-card__image-wrapper">
+                      <picture>
+                        <source srcset="img/training/trainer-2@1x.webp 1x, img/training/trainer-2@2x.webp 2x"
+                          type="image/webp" width="290" height="416">
+                        <img class="training-card__image" src="img/training/trainer-2@1x.jpg"
+                          srcset="img/training/trainer-2@2x.jpg 2x" width="290" height="416" alt="Фото инструктора."
+                          loading="lazy">
+                      </picture>
+                    </div>
+
+                    <div class="training-card__wrapper">
+                      <h4>Светлана Афиногенова</h4>
+
+                      <a class="training-card__link" href="#!">
+                        <svg class="training-card__link-icon" role="img" width="14" height="8"
+                          aria-label="Страница в Вконтакте.">
+                          <use href="/__spritemap#sprite-vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="training-card__text">
+                      <p>Видеть мир вокруг, познавать его&nbsp;опасности, находить друг друга, становиться ближе,
+                        чувствовать — в&nbsp;этом назначение жизни.</p>
+                    </div>
+
+                  </article>
+                </li>
+
+                <li class="training-swiper__item swiper-slide">
+                  <article class="training-card">
+
+                    <div class="training-card__image-wrapper">
+                      <picture>
+                        <source srcset="img/training/trainer-3@1x.webp 1x, img/training/trainer-3@2x.webp 2x"
+                          type="image/webp" width="290" height="416">
+                        <img class="training-card__image" src="img/training/trainer-3@1x.jpg"
+                          srcset="img/training/trainer-3@2x.jpg 2x" width="290" height="416" alt="Фото инструктора."
+                          loading="lazy">
+                      </picture>
+                    </div>
+
+                    <div class="training-card__wrapper">
+                      <h4>Надежда Колесниченко</h4>
+
+                      <a class="training-card__link" href="#!">
+                        <svg class="training-card__link-icon" role="img" width="14" height="8"
+                          aria-label="Страница в Вконтакте.">
+                          <use href="/__spritemap#sprite-vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="training-card__text">
+                      <p>Участники говорят, что&nbsp;Надежда ответственная, приятная в общении, и&nbsp;в&nbsp;поездках
+                        с&nbsp;ней&nbsp;чувствуешь себя спокойно и уверенно.</p>
+                    </div>
+
+                  </article>
+                </li>
+
+                <li class="training-swiper__item swiper-slide">
+                  <article class="training-card">
+
+                    <div class="training-card__image-wrapper">
+                      <picture>
+                        <source srcset="img/training/trainer-4@1x.webp 1x, img/training/trainer-4@2x.webp 2x"
+                          type="image/webp" width="290" height="416">
+                        <img class="training-card__image" src="img/training/trainer-4@1x.jpg"
+                          srcset="img/training/trainer-4@2x.jpg 2x" width="290" height="416" alt="Фото инструктора."
+                          loading="lazy">
+                      </picture>
+                    </div>
+
+                    <div class="training-card__wrapper">
+                      <h4>Федор Кайгородов</h4>
+
+                      <a class="training-card__link" href="#!">
+                        <svg class="training-card__link-icon" role="img" width="14" height="8"
+                          aria-label="Страница в Вконтакте.">
+                          <use href="/__spritemap#sprite-vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="training-card__text">
+                      <p>Опыт походов: Ходит в походы с&nbsp;2001&nbsp;года. В России побывал в горных районах Хибины,
+                        Архыз,
+                        много путешествует по Европе.</p>
+                    </div>
+
+                  </article>
+                </li>
+
+                <li class="training-swiper__item swiper-slide">
+                  <article class="training-card">
+
+                    <div class="training-card__image-wrapper">
+                      <picture>
+                        <source srcset="img/training/trainer-5@1x.webp 1x, img/training/trainer-5@2x.webp 2x"
+                          type="image/webp" width="290" height="416">
+                        <img class="training-card__image" src="img/training/trainer-5@1x.jpg"
+                          srcset="img/training/trainer-5@2x.jpg 2x" width="290" height="416" alt="Фото инструктора."
+                          loading="lazy">
+                      </picture>
+                    </div>
+
+                    <div class="training-card__wrapper">
+                      <h4>Даниэль Васнецов</h4>
+
+                      <a class="training-card__link" href="#!">
+                        <svg class="training-card__link-icon" role="img" width="14" height="8"
+                          aria-label="Страница в Вконтакте.">
+                          <use href="/__spritemap#sprite-vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="training-card__text">
+                      <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                    </div>
+
+                  </article>
+                </li>
+
+              </ul>
+            </div>
+
+
+          </div>
+
+          <div class="training__details training-details">
+            <h3 class="training-details__title">Процесс обучения</h3>
+
+            <ul class="training-details__list">
+              <li class="training-details__item training-details__item--map">
+                <span class="training-details__list-marker"></span>
+                <p class="training-details__text">Изучение спортивного туристского&nbsp;движения</p>
+              </li>
+              <li class="training-details__item training-details__item--boots">
+
+                <span class="training-details__list-marker"></span>
+                <p class="training-details__text">Подготовка и&nbsp;техническое снаряжение в походах</p>
+              </li>
+              <li class="training-details__item training-details__item--tree">
+
+                <span class="training-details__list-marker"></span>
+                <p class="training-details__text">Лекции по&nbsp;окружающей <br
+                    class="training-details__text-breakpoint training-details__text-breakpoint--tree">
+                  среде, экологии и гигиене</p>
+              </li>
+              <li class="training-details__item training-details__item--mountain">
+
+                <span class="training-details__list-marker"></span>
+                <p class="training-details__text">Разъяснение сложности <br
+                    class="training-details__text-breakpoint training-details__text-breakpoint--mountain">
+                  горных препятствий</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
 
 
 
@@ -308,6 +537,7 @@
     <section class="adv" id="adv" data-test="adv">adv</section>
     <section class="gallery" id="gallery" data-test="gallery">gallery</section>
     <section class="form" data-test="form">form</section>
+
   </main>
 
   <footer class="footer" data-test="footer" style="min-height: 100vh;">

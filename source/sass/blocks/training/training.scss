@@ -4,6 +4,10 @@
   @include media-tablet {
     padding: 40px 0;
   }
+
+  @include media-desktop {
+    padding: 40px 0 45px;
+  }
 }
 
 .training__container {

@@ -46,7 +46,7 @@
   }
 
   @include media-desktop {
-    padding: 100px 0;
+    padding: 100px 0 178px;
 
     &::before {
       width: 660px;
@@ -61,7 +61,7 @@
         );
       background-position: center;
       background-size: cover;
-      transform: translateY(calc(-50% + 39px));
+      transform: translateY(calc(-50%));
     }
   }
 }

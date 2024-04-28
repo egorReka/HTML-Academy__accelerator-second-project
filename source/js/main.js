@@ -7,8 +7,10 @@ import { toggleNav } from './nav';
 import { initSwiperHiro } from './swiper-hero';
 import { initSwiperTours } from './tours-swiper';
 import { initSwiperTraining } from './training-swiper';
+import { initSwiperReviews } from './reviews-swiper';
 
 toggleNav();
 initSwiperHiro(Swiper, Pagination);
 initSwiperTours(Swiper, Navigation);
 initSwiperTraining(Swiper, Navigation);
+initSwiperReviews(Swiper, Navigation);

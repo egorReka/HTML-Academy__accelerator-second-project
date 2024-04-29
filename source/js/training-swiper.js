@@ -19,7 +19,7 @@ const initSwiperTraining = (Swiper, Navigation) => {
         initialSlide: 0,
         slidesPerView: 3,
       },
-      1366: {
+      1440: {
         initialSlide: 0,
         slidesPerView: 4,
       },

@@ -1,0 +1,37 @@
+
+.adv-swiper__list.swiper-wrapper {
+  @include reset-list;
+  flex-direction: column;
+  gap: 15px;
+  width: $width-phone - ($padding-phone * 2);
+  margin: 0 auto;
+
+
+  @include media-tablet {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px 30px;
+    width: $width-tablet - ($padding-tablet * 2);
+  }
+
+  @include media-desktop {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 0;
+    width: $width-desktop - ($padding-desktop * 2);
+    min-height: 329px;
+    margin: 0;
+  }
+}
+
+
+.adv-swiper__item.swiper-slide {
+  @include media-tablet {
+    width: 324px;
+  }
+
+  @include media-desktop {
+    width: 380px;
+  }
+}

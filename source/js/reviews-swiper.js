@@ -32,13 +32,13 @@ const initSwiperReviews = (Swiper, Navigation) => {
     },
   });
 
-  swiper.on("slideChangeTransitionStart", function () {
-    let transformValue = 0;
-    transformValue = `${this.activeIndex * -this.slidesSizesGrid[this.activeIndex]}px`;
-    // console.log(-this.slidesSizesGrid[this.activeIndex]);
-    console.log(transformValue);
-    swiper.wrapperEl.style.transform = `translateX(${transformValue})`;
-  });
+  // swiper.on("slideChangeTransitionStart", function () {
+  //   let transformValue = 0;
+  //   transformValue = `${this.activeIndex * -this.slidesSizesGrid[this.activeIndex]}px`;
+  //   // console.log(-this.slidesSizesGrid[this.activeIndex]);
+  //   console.log(transformValue);
+  //   swiper.wrapperEl.style.transform = `translateX(${transformValue})`;
+  // });
 
 
   return swiper.init();

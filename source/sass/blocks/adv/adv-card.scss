@@ -1,0 +1,115 @@
+.adv-card {
+  padding: 19px 9px 19px;
+  min-height: 237px;
+  border: 1px solid var(--additional-20);
+
+  &::before {
+    display: block;
+    border: 1px solid var(--additional-100);
+    padding: 8px;
+    margin: 0 auto 20px;
+    width: 41px;
+    height: 42px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    content: "";
+  }
+
+  &--shield {
+    &::before {
+      background-image: url("/__spritemap#sprite-shield-view");
+    }
+  }
+
+  &--crown {
+    &::before {
+      background-image: url("/__spritemap#sprite-crown-view");
+    }
+  }
+
+  &--boots {
+    &::before {
+      background-image: url("/__spritemap#sprite-boots-blue-view");
+    }
+  }
+
+  &--path {
+    &::before {
+      background-image: url("/__spritemap#sprite-path-view");
+    }
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("/__spritemap#sprite-leaf-view");
+    }
+  }
+
+  @include media-tablet {
+    min-height: 340px;
+    padding: 29px 19px 28px 19px;
+
+    &::before {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 26px;
+    }
+  }
+
+  @include media-desktop {
+    min-height: 329px;
+    padding: 40px 20px;
+
+    &::before {
+      width: 54px;
+      height: 54px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.adv-card h3 {
+  margin: 15px 0 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 105%;
+  text-align: center;
+  letter-spacing: -0.01rem;
+
+  @include media-tablet {
+    margin: 15px 0 14px;
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  @include media-desktop {
+    font-size: 18px;
+  }
+}
+
+.adv-card h3 br {
+  @include media-desktop {
+    display: none;
+  }
+}
+
+.adv-card p {
+  margin: 8px 0;
+  font-size: 12px;
+  text-align: center;
+  line-height: 150%;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include media-tablet {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

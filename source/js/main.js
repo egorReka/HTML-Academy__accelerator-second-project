@@ -9,6 +9,7 @@ import { initSwiperTours } from './tours-swiper';
 import { initSwiperTraining } from './training-swiper';
 import { initSwiperReviews } from './reviews-swiper';
 import { initSwiperAdv } from './swiper-adv';
+import { initSwiperGallery } from './gallery-swiper';
 
 toggleNav();
 initSwiperHiro(Swiper, Pagination);
@@ -16,3 +17,4 @@ initSwiperTours(Swiper, Navigation);
 initSwiperTraining(Swiper, Navigation);
 initSwiperReviews(Swiper, Navigation);
 initSwiperAdv(Swiper, Navigation);
+initSwiperGallery(Swiper, Navigation);

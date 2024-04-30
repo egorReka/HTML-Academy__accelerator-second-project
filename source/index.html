@@ -818,15 +818,6 @@
             </div>
           </li>
 
-          <!-- <li class="adv-swiper__item swiper-slide">
-            <div class="adv__card adv-card adv-card--leaf">
-              <h3>Бережное отношение <br> к природе</h3>
-              <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
-                воздействие на
-                природную среду. Наша компания следует принципу «Не оставлять следов».</p>
-            </div>
-          </li> -->
-
         </ul>
 
 
@@ -841,7 +832,197 @@
 
     </section>
 
-    <section class="gallery" id="gallery" data-test="gallery">gallery</section>
+    <section class="gallery" id="gallery" data-test="gallery">
+      <div class="container">
+        <div class="gallery__header">
+          <h2 class="gallery__title title title--secondary" data-content="Фотогалерея">Фотогалерея</h2>
+          <p class="gallery__text">Добавляйте фото в с хэштегом #лайфтур, а&nbsp;также&nbsp;отмечайте нас на фото.
+            Лучшие фотографии украсят этот раздел нашего сайта.</p>
+          <div class="gallery__buttons">
+            <button class="gallery__button gallery__button--prev button button--arrow" type="button"
+              aria-label="Предыдущий отзыв"></button>
+            <button class="gallery__button gallery__button--next button button--arrow" type="button"
+              aria-label="Следующий отзыв"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-swiper swiper">
+        <ul class="gallery-swiper__list swiper-wrapper">
+
+          <li class="gallery__item gallery__item--one gallery-swiper__item swiper-slide">
+            <div class="gallery__card gallery-card">
+
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-1-desktop@1x.webp, img/gallery/image-1-desktop@2x.webp 2x" width="284"
+                  height="463">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery/image-1-tablet@1x.webp, img/gallery/image-1-tablet@2x.webp 2x" width="253"
+                  height="418">
+                <source srcset="img/gallery/image-1-mobile@1x.webp 1x, img/gallery/image-1-mobile@2x.webp 2x"
+                  type="image/webp" width="158" height="266">
+                <source type="image/jpg" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-1-desktop@1x.jpg, img/gallery/image-1-desktop@2x.jpg 2x" width="284"
+                  height="463">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="img/gallery/image-1-tablet@1x.jpg, img/gallery/image-1-tablet@2x.jpg 2x" width="253"
+                  height="418">
+                <img class="gallery__image" src="img/gallery/image-1-mobile@1x.jpg"
+                  srcset="img/gallery/image-1-mobile@2x.jpg 2x" width="158" height="266"
+                  alt="Фото парня спиной на фоне гор." loading="lazy">
+              </picture>
+
+            </div>
+          </li>
+
+          <li class="gallery__item gallery__item--two gallery-swiper__item swiper-slide">
+            <div class="gallery__card gallery-card">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-2-desktop@1x.webp, img/gallery/image-2-desktop@2x.webp 2x" width="284"
+                  height="233">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery/image-2-tablet@1x.webp, img/gallery/image-2-tablet@2x.webp 2x" width="253"
+                  height="418">
+                <source srcset="img/gallery/image-2-mobile@1x.webp 1x, img/gallery/image-2-mobile@2x.webp 2x"
+                  type="image/webp" width="157" height="135">
+                <source type="image/jpg" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-2-desktop@1x.jpg, img/gallery/image-2-desktop@2x.jpg 2x" width="284"
+                  height="233">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="img/gallery/image-2-tablet@1x.jpg, img/gallery/image-2-tablet@2x.jpg 2x" width="253"
+                  height="418">
+                <img class="gallery__image" src="img/gallery/image-2-mobile@1x.jpg"
+                  srcset="img/gallery/image-2-mobile@2x.jpg 2x" width="157" height="135"
+                  alt="Вечерние посиделки у костра." loading="lazy">
+              </picture>
+
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-3-desktop@1x.webp, img/gallery/image-3-desktop@2x.webp 2x" width="284"
+                  height="233">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery/image-3-tablet@1x.webp, img/gallery/image-3-tablet@2x.webp 2x" width="253"
+                  height="418">
+                <source srcset="img/gallery/image-3-mobile@1x.webp 1x, img/gallery/image-3-mobile@2x.webp 2x"
+                  type="image/webp" width="157" height="124">
+                <source type="image/jpg" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-3-desktop@1x.jpg, img/gallery/image-3-desktop@2x.jpg 2x" width="284"
+                  height="233">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="img/gallery/image-3-tablet@1x.jpg, img/gallery/image-3-tablet@2x.jpg 2x" width="253"
+                  height="418">
+                <img class="gallery__image" src="img/gallery/image-3-mobile@1x.jpg"
+                  srcset="img/gallery/image-3-mobile@2x.jpg 2x" width="157" height="124"
+                  alt="Компас в руке на фоне гор." loading="lazy">
+              </picture>
+            </div>
+          </li>
+
+          <li class="gallery__item gallery__item--one gallery-swiper__item swiper-slide">
+            <div class="gallery__card gallery-card">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-4-desktop@1x.webp, img/gallery/image-4-desktop@2x.webp 2x" width="284"
+                  height="463">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery/image-4-tablet@1x.webp, img/gallery/image-4-tablet@2x.webp 2x" width="253"
+                  height="418">
+                <source srcset="img/gallery/image-4-tablet@1x.webp 1x, img/gallery/image-4-tablet@2x.webp 2x"
+                  type="image/webp" width="158" height="266">
+                <source type="image/jpg" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-4-desktop@1x.jpg, img/gallery/image-4-desktop@2x.jpg 2x" width="284"
+                  height="463">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="img/gallery/image-4-tablet@1x.jpg, img/gallery/image-4-tablet@2x.jpg 2x" width="253"
+                  height="418">
+                <img class="gallery__image" src="img/gallery/image-4-tablet@1x.jpg"
+                  srcset="img/gallery/image-4-tablet@2x.jpg 2x" width="158" height="266"
+                  alt="Поднимающаяся в горы группа туристов." loading="lazy">
+              </picture>
+            </div>
+          </li>
+
+          <li class="gallery__item gallery__item--two gallery-swiper__item swiper-slide">
+            <div class="gallery__card gallery-card">
+
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-5-desktop@1x.webp, img/gallery/image-5-desktop@2x.webp 2x" width="284"
+                  height="233">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery/image-5-desktop@1x.webp, img/gallery/image-5-desktop@2x.webp 2x" width="253"
+                  height="418">
+                <source srcset="img/gallery/image-5-desktop@1x.webp 1x, img/gallery/image-5-desktop@2x.webp 2x"
+                  type="image/webp" width="157" height="135">
+                <source type="image/jpg" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-5-desktop@1x.jpg, img/gallery/image-5-desktop@2x.jpg 2x" width="284"
+                  height="233">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="img/gallery/image-5-desktop@1x.jpg, img/gallery/image-5-desktop@2x.jpg 2x" width="253"
+                  height="418">
+                <img class="gallery__image" src="img/gallery/image-5-desktop@1x.jpg"
+                  srcset="img/gallery/image-5-desktop@2x.jpg 2x" width="157" height="135"
+                  alt="Фото альпинистов в снегоступах." loading="lazy">
+              </picture>
+
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-6-desktop@1x.webp, img/gallery/image-6-desktop@2x.webp 2x" width="284"
+                  height="233">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery/image-6-desktop@1x.webp, img/gallery/image-6-desktop@2x.webp 2x" width="253"
+                  height="418">
+                <source srcset="img/gallery/image-6-desktop@1x.webp 1x, img/gallery/image-6-desktop@2x.webp 2x"
+                  type="image/webp" width="157" height="124">
+                <source type="image/jpg" media="(min-width: 1366px)"
+                  srcset="img/gallery/image-6-desktop@1x.jpg, img/gallery/image-6-desktop@2x.jpg 2x" width="284"
+                  height="233">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="img/gallery/image-6-desktop@1x.jpg, img/gallery/image-6-desktop@2x.jpg 2x" width="253"
+                  height="418">
+                <img class="gallery__image" src="img/gallery/image-6-desktop@1x.jpg"
+                  srcset="img/gallery/image-6-desktop@2x.jpg 2x" width="157" height="124"
+                  alt="Палатка под зведным небом в горах." loading="lazy">
+              </picture>
+
+            </div>
+          </li>
+
+          <li class="gallery__item gallery__item--one gallery-swiper__item swiper-slide">
+            <div class="gallery__card gallery-card">
+
+              <div class="gallery__card gallery-card">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/gallery/image-7-desktop@1x.webp, img/gallery/image-7-desktop@2x.webp 2x" width="284"
+                    height="463">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/gallery/image-7-desktop@1x.webp, img/gallery/image-7-desktop@2x.webp 2x" width="253"
+                    height="418">
+                  <source srcset="img/gallery/image-7-desktop@1x.webp 1x, img/gallery/image-7-desktop@2x.webp 2x"
+                    type="image/webp" width="158" height="266">
+                  <source type="image/jpg" media="(min-width: 1366px)"
+                    srcset="img/gallery/image-7-desktop@1x.jpg, img/gallery/image-7-desktop@2x.jpg 2x" width="284"
+                    height="463">
+                  <source type="image/jpg" media="(min-width: 768px)"
+                    srcset="img/gallery/image-7-desktop@1x.jpg, img/gallery/image-7-desktop@2x.jpg 2x" width="253"
+                    height="418">
+                  <img class="gallery__image" src="img/gallery/image-7-desktop@1x.jpg"
+                    srcset="img/gallery/image-7-desktop@2x.jpg 2x" width="158" height="266"
+                    alt="Двое парней разводят костер." loading="lazy">
+                </picture>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
     <section class="form" data-test="form">form</section>
 
   </main>
@@ -878,3 +1059,4 @@
 <!-- TODO nav и hero слайдер центрирование контента -->
 <!-- TODO удалить закоментированный код css -->
 <!-- Проверить высоту картинок -->
+<!-- анимацию на интерактивные элементы -->

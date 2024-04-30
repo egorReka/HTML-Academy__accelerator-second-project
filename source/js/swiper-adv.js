@@ -16,6 +16,8 @@ function swiperSetup(Swiper, Navigation) {
     },
     breakpoints: {
       320: {
+        enabled: false,
+
         init: false,
         loop: false,
         spaceBetween: 0,
@@ -26,6 +28,8 @@ function swiperSetup(Swiper, Navigation) {
         virtualTranslate: true,
       },
       768: {
+        enabled: false,
+
         init: false,
         loop: false,
         spaceBetween: 0,

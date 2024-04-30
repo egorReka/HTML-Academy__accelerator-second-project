@@ -1,0 +1,18 @@
+.gallery-swiper {
+  // width: 100%;
+}
+
+.gallery-swiper__list.swiper-wrapper {
+  @include reset-list;
+  max-width: $width-phone; // TODO исправить - полоса прокрутки
+  margin: 0 auto;
+
+  @include media-tablet {
+    max-width: $width-tablet;
+  }
+
+  @include media-desktop {
+    max-width: $width-desktop;
+  }
+}
+

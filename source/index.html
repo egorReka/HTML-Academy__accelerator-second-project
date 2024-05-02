@@ -1023,12 +1023,41 @@
     </section>
 
 
-    <section class="form" data-test="form">form</section>
+    <section class="form" data-test="form">
+
+      <div class="form__container container">
+
+        <div class="form__header">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется &nbsp;с&nbsp;вами&nbsp;для&nbsp;консультации.</p>
+        </div>
+
+        <form class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
+
+          <div class="form__group">
+            <input class="form__input" id="phone" type="tel" name="phone" placeholder=" " required>
+            <label class="form__label" for="phone">Телефон</label>
+          </div>
+
+          <div class="form__group">
+            <input class="form__input" id="email" type="text" name="email" placeholder=" " required>
+            <label class="form__label" for="email">Email</label>
+          </div>
+
+          <button class="form__submit button" type="submit">Отправить</button>
+
+        </form>
+
+      </div>
+
+    </section>
 
   </main>
 
   <footer class="footer" data-test="footer" style="min-height: 100vh;">
-    <section class="contact" id="contact"></section>
+    <section class="contact" id="contact">
+
+    </section>
   </footer>
 
   <script type="module" src="js/main.js"></script>

@@ -11,7 +11,8 @@ const initSwiperGallery = (Swiper, Navigation) => {
     },
     breakpoints: {
       320: {
-        // slidesPerView: 2,
+        slidesPerView: 2,
+        enabled: true,
       },
       768: {
         slidesPerView: 3,

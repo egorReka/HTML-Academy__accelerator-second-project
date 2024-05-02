@@ -4,6 +4,7 @@
 
 .gallery-swiper__list.swiper-wrapper {
   @include reset-list;
+  width: 100%;
   max-width: $width-phone; // TODO исправить - полоса прокрутки
   margin: 0 auto;
 

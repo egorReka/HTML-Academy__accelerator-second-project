@@ -21,12 +21,14 @@ $basic-light-blue: #0266C1;
 $basic-white: #FFFFFF;
 $basic-black: #000000;
 $alt-black: #030A1A;
+$basic-green: #373C31;
 
 :root {
   // Color
   --primary: #{$basic-grey};
   --error: #{$basic-red};
   --active: #{$basic-blue};
+  --primary-50: #{rgba($basic-grey, 0.5)};
   --stroke-br: #{rgba($basic-grey, 0.2)};
   --border-30: #{rgba($basic-grey, 0.3)};
   --disabled: #{$basic-light-grey};
@@ -35,9 +37,11 @@ $alt-black: #030A1A;
   --white-50: #{rgba($basic-white, 0.5)};
   --white-10: #{rgba($basic-white, 0.1)};
   --additional-100: #{$basic-light-blue};
+  --additional-50: #{rgba($basic-light-blue, 0.5)};
   --additional-20: #{rgba($basic-light-blue, 0.2)};
   --additional-10: #{rgba($basic-light-blue, 0.1)};
   --overlay-50: #{rgba($basic-black, 0.5)};
   --dark: #{$alt-black};
   --hero-gradient: #{linear-gradient(to bottom right, rgba($basic-dark-blue, 0.33) 0%, rgba($basic-dark-blue, 0) 100%)};
+  --form-bg: #{$basic-green};
 }

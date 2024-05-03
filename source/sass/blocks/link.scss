@@ -1,53 +1,22 @@
-// .link {
-//   padding: 10px;
-//   font-family: inherit;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 100%;
-//   text-transform: uppercase;
-//   text-decoration: underline;
-//   text-underline-position: under;
-//   text-decoration-thickness: 1px;
-//   text-underline-offset: 3px;
-//   color: inherit;
+.link {
+  @include reset-link;
+  color: var(--primary);
+  transition: 0.2s color ease-in-out;
 
-//   &:hover {
-//     opacity: 0.8;
-//   }
+  &:hover {
+    color: var(--additional-20);
+  }
 
-//   &:focus {
-//     text-decoration-color: transparent;
-//   }
+  &:focus {
+    color: var(--additional-100);
+  }
 
-//   &:active {
-//     opacity: 1;
-//     outline-color: transparent;
-//   }
+  &:active {
+    color: var(--active);
+  }
 
-//   &--primary {
-//     &:focus {
-//       outline: 1px solid $base-white;
-//     }
-
-//     &:active {
-//       text-decoration-color: $base-white;
-//       outline-color: transparent;
-//     }
-//   }
-
-//   &--secondary {
-//     &:focus {
-//       outline: 1px solid $base-pearl;
-//     }
-
-//     &:active {
-//       text-decoration-color: $base-pearl;
-//       outline-color: transparent;
-//     }
-//   }
-
-//   &:disabled,
-//   &:not([href]) {
-//     opacity: 0.5;
-//   }
-// }
+  &:not([href]) {
+    color: var(--disabled);
+    pointer-events: none;
+  }
+}

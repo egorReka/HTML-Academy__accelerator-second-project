@@ -28,6 +28,7 @@ $basic-green: #373C31;
   --primary: #{$basic-grey};
   --error: #{$basic-red};
   --active: #{$basic-blue};
+  --primary-60: #{rgba($basic-grey, 0.6)};
   --primary-50: #{rgba($basic-grey, 0.5)};
   --stroke-br: #{rgba($basic-grey, 0.2)};
   --border-30: #{rgba($basic-grey, 0.3)};

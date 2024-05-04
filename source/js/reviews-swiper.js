@@ -2,49 +2,55 @@ const initSwiperReviews = (Swiper, Navigation) => {
   const swiper = new Swiper('.reviews-swiper', {
     modules: [Navigation],
     loop: false,
-    // simulateTouch: false,
-    virtualTranslate: true,
+    simulateTouch: false,
     slidesPerView: 'auto',
     navigation: {
       nextEl: '.reviews__button--next',
       prevEl: '.reviews__button--prev',
     },
     breakpoints: {
-      320: {
-        // slidesPerColumn: 1,
-        // spaceBetween: 15,
-        slidesPerView: 'auto'
-
-      },
       768: {
         spaceBetween: 30,
-        // virtualTranslate: true,
-
-        // slidesPerColumn: 1,
-        // centeredSlides: true,
-        // slidesPerGroup: 1,
       },
       1440: {
-        slidesPerView: 'auto',
         spaceBetween: 120,
-        // slidesPerColumn: 1,
       },
     },
   });
 
-  // swiper.on("slideChangeTransitionStart", function () {
-  //   let transformValue = 0;
-  //   transformValue = `${this.activeIndex * -this.slidesSizesGrid[this.activeIndex]}px`;
-  //   // console.log(-this.slidesSizesGrid[this.activeIndex]);
-  //   console.log(transformValue);
-  //   swiper.wrapperEl.style.transform = `translateX(${transformValue})`;
-  // });
+  function updateTransformPadding () {
+    const tabletWidth = window.matchMedia('(min-width: 768px) and (max-width: 1439px)');
+    const desktopWidth = window.matchMedia('(min-width: 1440px)');
+    const reviewsSwiper = document.querySelector('.reviews-swiper');
+    const isActiveFirstSlide = this.activeIndex === 0;
 
+    if (tabletWidth.matches) {
+      if (isActiveFirstSlide) {
+        reviewsSwiper.style.transform = 'translateX(45px)';
+      } else {
+        reviewsSwiper.style.transform = 'translateX(0)';
+      }
+
+      return;
+    }
+
+    if (desktopWidth.matches) {
+      if (isActiveFirstSlide) {
+        reviewsSwiper.style.transform = 'translateX(120px)';
+      } else {
+        reviewsSwiper.style.transform = 'translateX(0)';
+      }
+
+      return;
+    }
+
+    reviewsSwiper.style.transform = 'translateX(0)';
+  }
+
+  swiper.on('slideChangeTransitionStart', updateTransformPadding);
+  swiper.on('resize', updateTransformPadding);
 
   return swiper.init();
 };
 
 export {initSwiperReviews};
-
-
-// TODO ! Докрутить последний слайд

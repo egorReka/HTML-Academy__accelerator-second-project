@@ -14,6 +14,7 @@ $padding-desktop: 120px;
 // Color
 $basic-grey: #2D383F;
 $basic-light-grey: #999999;
+$alt-light-grey: #D9D9D9;
 $basic-red: #FF121F;
 $basic-blue: #1C3374;
 $basic-dark-blue: #0F1429;
@@ -33,6 +34,7 @@ $basic-green: #373C31;
   --stroke-br: #{rgba($basic-grey, 0.2)};
   --border-30: #{rgba($basic-grey, 0.3)};
   --disabled: #{$basic-light-grey};
+  --bullet-hover: #{$alt-light-grey};
   --white-100: #{$basic-white};
   --white-20: #{rgba($basic-white, 0.2)};
   --white-50: #{rgba($basic-white, 0.5)};

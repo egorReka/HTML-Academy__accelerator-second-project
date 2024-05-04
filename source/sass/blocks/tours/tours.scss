@@ -75,6 +75,7 @@
   line-height: 100%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  transition: 0.2s color ease-in-out;
 
   &::after {
     position: absolute;
@@ -89,6 +90,7 @@
     mask-size: contain;
     mask-position: center;
     background-color: var(--primary);
+    transition: 0.2s background-color ease-in-out;
     content: "";
   }
 

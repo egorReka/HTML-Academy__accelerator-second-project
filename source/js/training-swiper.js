@@ -1,4 +1,7 @@
-// TODO убрать фокус со сктытого слайдера на ссылку vk
+import {disablesFocusHiddenSlides} from './utils';
+
+const trainingSwiper = document.querySelector('.training-swiper');
+const trainingLinkClass = 'training-card__link';
 
 const initSwiperTraining = (Swiper, Navigation) => {
   const swiper = new Swiper('.training-swiper', {
@@ -6,6 +9,8 @@ const initSwiperTraining = (Swiper, Navigation) => {
     loop: false,
     spaceBetween: 20,
     simulateTouch: false,
+    preventClicks: true,
+    watchSlidesProgress: true,
     navigation: {
       nextEl: '.training__button--next',
       prevEl: '.training__button--prev',
@@ -24,9 +29,18 @@ const initSwiperTraining = (Swiper, Navigation) => {
         slidesPerView: 4,
       },
     },
+    on: {
+      transitionEnd: function () {
+        this.updateSlidesClasses();
+        disablesFocusHiddenSlides(trainingSwiper, trainingLinkClass);
+      }
+    },
   });
+
+  window.addEventListener('load', disablesFocusHiddenSlides(trainingSwiper, trainingLinkClass), {once: true});
 
   return swiper.init();
 };
+
 
 export {initSwiperTraining};

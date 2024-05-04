@@ -7,7 +7,7 @@
   gap: 21px;
 
   --swiper-pagination-bullet-size: 15px;
-  --swiper-pagination-color: var(--white-100);
+  --swiper-pagination-color: transparent;
   --swiper-pagination-bullet-inactive-color: transparent;
   --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-bullet-horizontal-gap: 0px;
@@ -29,7 +29,33 @@
   }
 }
 
-// TODO сделать состояния
-.swiper-pagination-bullet {
-  outline: 1px solid var(--white-100);
+.hero-pagination__button {
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  border: 1px solid var(--white-100);
+  background-color: transparent;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.2s background-color ease-in-out;
+
+  &:hover {
+    background-color: var(--bullet-hover);
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--white-50);
+    outline-offset: 1px;
+  }
+
+  &:active {
+    background-color: var(--white-50);
+  }
+}
+
+.swiper-pagination-bullet-active > .hero-pagination__button {
+  background-color: var(--white-100);
 }

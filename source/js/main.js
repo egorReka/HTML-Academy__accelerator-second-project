@@ -3,7 +3,7 @@ import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { toggleNav } from './nav';
+import { initNavToggle } from './nav-toggle';
 import { initSwiperHiro } from './swiper-hero';
 import { initSwiperTours } from './tours-swiper';
 import { initSwiperTraining } from './training-swiper';
@@ -12,7 +12,7 @@ import { initSwiperAdv } from './swiper-adv';
 import { initSwiperGallery } from './gallery-swiper';
 import { validateForm } from './validate-form';
 
-toggleNav();
+initNavToggle();
 initSwiperHiro(Swiper, Pagination);
 initSwiperTours(Swiper, Navigation);
 initSwiperTraining(Swiper, Navigation);

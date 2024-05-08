@@ -10,7 +10,7 @@ import { initSwiperTraining } from './training-swiper';
 import { initSwiperReviews } from './reviews-swiper';
 import { initSwiperAdv } from './swiper-adv';
 import { initSwiperGallery } from './gallery-swiper';
-import { validateForm } from './validate-form';
+import { initValidationForm } from './form-validate';
 
 initNavToggle();
 initSwiperHiro(Swiper, Pagination);
@@ -19,4 +19,4 @@ initSwiperTraining(Swiper, Navigation);
 initSwiperReviews(Swiper, Navigation);
 initSwiperAdv(Swiper, Navigation);
 initSwiperGallery(Swiper, Navigation);
-validateForm();
+initValidationForm();

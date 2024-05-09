@@ -4,67 +4,76 @@
   font-size: 16px;
   line-height: 100%;
   text-align: center;
-  color: var(--white-100);
-  background-color: var(--additional-100);
+  color: $white-100;
+  background-color: $additional-100;
   transition: 0.2s background-color ease-in-out, 0.2s outline ease-in-out, 0.3s color ease-in-out;
   border: none;
   user-select: none;
   cursor: pointer;
 
-  &--arrow {
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: block;
-      width: 15px;
-      height: 10px;
-      mask-image: url("/__spritemap#sprite-arrow-button-view");
-      mask-repeat: no-repeat;
-      mask-position: center;
-      mask-size: contain;
-      background-color: var(--white-100);
-      content: "";
-    }
+  &:hover {
+    background-color: $white-100;
+    outline: 1px solid $basic-blue;
+    color: $basic-blue;
+  }
+
+  &:focus-visible {
+    background-color: $white-100;
+    color: $basic-blue;
+  }
+
+  &:active {
+    background: $basic-blue;
+    color: $white-100;
+  }
+
+  &:disabled,
+  &:not([type="button"]):not([type="submit"]):not([href]) {
+    background-color: $disabled;
+    color: $white-100;
+    pointer-events: none;
+  }
+}
+
+.button--arrow {
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 15px;
+    height: 10px;
+    mask-image: url("/__spritemap#sprite-arrow-button-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    background-color: $white-100;
+    content: "";
   }
 
   &:hover {
-    background-color: var(--white-100);
-    outline: 1px solid var(--active);
-    color: var(--active);
-
     &::before {
-      background-color: var(--active);
+      background-color: $basic-blue;
     }
   }
 
   &:focus-visible {
-    background-color: var(--white-100);
-    color: var(--active);
-
     &::before {
-      background-color: var(--active);
+      background-color: $basic-blue;
     }
   }
 
   &:active {
-    background: var(--active);
-    color: var(--white-100);
-
     &::before {
-      background-color: var(--white-100);
+      background-color: $white-100;
     }
   }
 
   &:disabled,
   &:not([type="button"]):not([type="submit"]):not([href]) {
-    background-color: var(--disabled);
-    color: var(--white-100);
-    pointer-events: none;
-
     &::before {
-      background-color: var(--white-100);
+      background-color: $white-100;
     }
   }
 }

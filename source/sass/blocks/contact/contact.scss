@@ -1,6 +1,6 @@
 .contact {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--stroke-br);
+  padding: 20px 0 19px;
+  border-bottom: 1px solid $primary-20;
 
   @include media-tablet {
     padding: 40px 0 39px;
@@ -26,7 +26,7 @@
       height: 1px;
       margin-left: calc(-100vw / 2 + 100% / 2);
       margin-right: calc(-100vw / 2 + 100% / 2);
-      background-color: var(--stroke-br);
+      background-color: $primary-20;
       content: "";
     }
   }
@@ -60,10 +60,11 @@
 }
 
 .contact__title {
-  margin: 17px 0 29px;
+  margin: 16px 0 29px;
+  line-height: 102%;
 
   @include media-tablet {
-    margin: 20px 0 21px;
+    margin: 19px 0 21px;
   }
 
   @include media-desktop {
@@ -77,15 +78,16 @@
 
 .contact__list {
   @include reset-list;
+
   display: grid;
   row-gap: 30px;
-  margin: 0 0 29px;
+  margin: 0 0 30px;
 
   @include media-tablet {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    margin: 0 -2px 39px 0;
+    margin: 0 -2px 40px 0;
   }
 
   @include media-desktop {
@@ -113,22 +115,16 @@
     content: "";
   }
 
-  &--tel {
-    &::before {
-      background-image: url("/__spritemap#sprite-phone-view");
-    }
+  &--tel::before {
+    background-image: url("/__spritemap#sprite-phone-view");
   }
 
-  &--mail {
-    &::before {
-      background-image: url("/__spritemap#sprite-mail-view");
-    }
+  &--mail::before {
+    background-image: url("/__spritemap#sprite-mail-view");
   }
 
-  &--pin {
-    &::before {
-      background-image: url("/__spritemap#sprite-pin-stroke-view");
-    }
+  &--pin::before {
+    background-image: url("/__spritemap#sprite-pin-stroke-view");
   }
 
   @include media-tablet {
@@ -170,6 +166,7 @@
 
 .contact__text {
   @include reset-link;
+
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
   margin: 0;

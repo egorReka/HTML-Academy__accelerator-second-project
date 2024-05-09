@@ -10,7 +10,7 @@
 
   @include media-desktop {
     min-height: 293px;
-    transform: translateX($padding-desktop);
+    transform: translateX($padding-desktop + 10px);
   }
 }
 

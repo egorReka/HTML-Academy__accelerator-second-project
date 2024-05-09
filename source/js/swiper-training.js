@@ -1,4 +1,4 @@
-import {disablesFocusHiddenSlides} from './utils';
+import {disablesFocusHiddenSlides} from './swiper-utils';
 
 const trainingSwiper = document.querySelector('.training-swiper');
 const trainingLinkClass = 'training-card__link';

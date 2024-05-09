@@ -8,6 +8,7 @@
 
 .tours-labels__list {
   @include reset-list;
+
   display: flex;
   flex-wrap: wrap;
   gap: 12px 14px;
@@ -34,25 +35,21 @@
   &--pin {
     min-height: 28px;
     padding: 6px 12px;
-    background-color: var(--additional-100);
-
-    &::before {
-      min-width: 16px;
-      height: 16px;
-      margin-right: 6px;
-      background-image: url("/__spritemap#sprite-pin-filled-view");
-    }
+    background-color: $additional-100;
   }
 
-  &--day {
-    &::before {
-      background-image: url("/__spritemap#sprite-sun-view");
-    }
+  &--pin::before {
+    min-width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    background-image: url("/__spritemap#sprite-pin-filled-view");
   }
 
-  &--night {
-    &::before {
-      background-image: url("/__spritemap#sprite-moon-view");
-    }
+  &--day::before {
+    background-image: url("/__spritemap#sprite-sun-view");
+  }
+
+  &--night::before {
+    background-image: url("/__spritemap#sprite-moon-view");
   }
 }

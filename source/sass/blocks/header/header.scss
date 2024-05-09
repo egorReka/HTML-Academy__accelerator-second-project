@@ -1,7 +1,7 @@
 .header {
   position: relative;
-  background-color: var(--additional-100);
-  color: var(--white-100);
+  background-color: $additional-100;
+  color: $white-100;
   z-index: 2;
 }
 
@@ -12,7 +12,7 @@
   width: $width-phone - ($padding-phone * 2);
   margin: 0 auto;
   padding: 15px 0 10px;
-  background-color: var(--additional-100);
+  background-color: $additional-100;
 
   @include media-tablet {
     align-items: center;
@@ -43,6 +43,7 @@
 
 .header__nav-list {
   @include reset-list;
+
   width: $width-phone - ($padding-phone * 2);
   margin: 0 auto;
 
@@ -92,7 +93,7 @@
     display: block;
     width: 100%;
     height: 8%;
-    background-color: var(--white-100);
+    background-color: $white-100;
     transition: transform 0.5s ease-in-out;
     content: "";
   }
@@ -105,14 +106,12 @@
     transform: translateY(8px);
   }
 
-  &--active {
-    &::before {
-      transform: translateY(0) rotate(45deg);
-    }
+  &--active::before {
+    transform: translateY(0) rotate(45deg);
+  }
 
-    &::after {
-      transform: translateY(0) rotate(-45deg);
-    }
+  &--active::after {
+    transform: translateY(0) rotate(-45deg);
   }
 
   @include media-desktop {
@@ -124,7 +123,7 @@
   display: block;
   width: 65%;
   height: 8%;
-  background-color: var(--white-100);
+  background-color: $white-100;
   opacity: 1;
   transition: transform 0.9s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -171,19 +170,19 @@
   transition: 0.2s color ease-in-out;
 
   &:hover {
-    color: var(--white-50);
+    color: $white-50;
   }
 
   &:focus-visible {
-    color: var(--primary);
+    color: $primary;
   }
 
   &:active {
-    color: var(--active);
+    color: $basic-blue;
   }
 
   &:not([href]) {
-    color: var(--disabled);
+    color: $disabled;
     pointer-events: none;
   }
 
@@ -191,6 +190,5 @@
     align-self: flex-start;
     margin: 21px 0 0;
     font-size: 18px;
-    letter-spacing: -0.006rem;
   }
 }

@@ -2,37 +2,40 @@
   position: relative;
   min-height: 638px;
   padding: 154px 0 100px;
-  color: var(--white-100);
-  background-color: var(--form-bg);
+  color: $white-100;
+  background-color: $basic-green;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: image-set(
-      url("../../../img/form/background-form-mobile@2x.webp") type("image/webp") 2x,
-      url("../../../img/form/background-form-mobile@1x.webp") type("image/webp") 1x,
-      url("../../../img/form/background-form-mobile@2x.jpg") 2x,
-      url("../../../img/form/background-form-mobile@1x.jpg") 1x
+  background-image:
+    image-set(
+      url("../img/form/background-form-mobile@2x.webp") type("image/webp") 2x,
+      url("../img/form/background-form-mobile@1x.webp") type("image/webp") 1x,
+      url("../img/form/background-form-mobile@2x.jpg") 2x,
+      url("../img/form/background-form-mobile@1x.jpg") 1x
     );
 
 
   @include media-tablet {
     min-height: 680px;
-    background-image: image-set(
-        url("../../../img/form/background-form-tablet@2x.webp") type("image/webp") 2x,
-        url("../../../img/form/background-form-tablet@1x.webp") type("image/webp") 1x,
-        url("../../../img/form/background-form-tablet@2x.jpg") 2x,
-        url("../../../img/form/background-form-tablet@1x.jpg") 1x
+    background-image:
+      image-set(
+        url("../img/form/background-form-tablet@2x.webp") type("image/webp") 2x,
+        url("../img/form/background-form-tablet@1x.webp") type("image/webp") 1x,
+        url("../img/form/background-form-tablet@2x.jpg") 2x,
+        url("../img/form/background-form-tablet@1x.jpg") 1x
       );
   }
 
   @include media-desktop {
     min-height: 760px;
     padding: 277px 0 100px;
-    background-image: image-set(
-        url("../../../img/form/background-form-desktop@2x.webp") type("image/webp") 2x,
-        url("../../../img/form/background-form-desktop@1x.webp") type("image/webp") 1x,
-        url("../../../img/form/background-form-desktop@2x.jpg") 2x,
-        url("../../../img/form/background-form-desktop@1x.jpg") 1x
+    background-image:
+      image-set(
+        url("../img/form/background-form-desktop@2x.webp") type("image/webp") 2x,
+        url("../img/form/background-form-desktop@1x.webp") type("image/webp") 1x,
+        url("../img/form/background-form-desktop@2x.jpg") 2x,
+        url("../img/form/background-form-desktop@1x.jpg") 1x
       );
   }
 }
@@ -44,7 +47,7 @@
     max-width: 360px;
   }
 
-  @include media-desktop  {
+  @include media-desktop {
     max-width: 960px;
   }
 }
@@ -110,7 +113,8 @@
 }
 
 .form__group {
-  position: relative;
+  display: grid;
+  align-items: center;
   width: 100%;
   min-height: 50px;
 
@@ -124,41 +128,41 @@
 }
 
 .form__input {
-  position: absolute;
-  top: 0;
-  left: 0;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
   display: block;
   width: 100%;
   height: 100%;
-  padding: 15px;
-  font-family: var(--font-family);
+  padding: 14px;
+  font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-  color: var(--primary);
-  background-color: var(--white-100);
-  border: 1px solid var(--additional-20);
+  color: $primary;
+  background-color: $white-100;
+  border: 1px solid $additional-20;
+  transition: 0.3s border-color ease-in-out, 0.3s color ease-in-out;
 
   &::placeholder {
-    color: var(--additional-50);
+    color: $additional-50;
   }
 
-  // &:placeholder-shown {
-  //   border-color: var(--additional-100); // TODO ждем ответа на вопрос
-  // }
+  &:placeholder-shown {
+    border-color: $additional-100;
+  }
 
   &:hover {
-    border-color: var(--additional-100);
+    border-color: $additional-100;
   }
 
   &:focus-visible {
-    border-color: var(--primary);
-    color: var(--primary);
+    border-color: $primary;
+    color: $primary;
     outline: none;
   }
 
   &:disabled {
-    border-color: var(--disabled);
+    border-color: $disabled;
   }
 
   @include media-tablet {
@@ -167,44 +171,36 @@
   }
 }
 
-.form__input:focus + .form__label {
-  color: transparent;
-}
-
-.form__input:disabled + .form__label {
-  color: var(--disabled);
-}
-
-.form__input:not(:empty) + .form__label {
-  color: transparent;
-}
-
-.form__input:focus + .form__label,
-.form__input:not(:placeholder-shown) + .form__label {
-  color: transparent;
-}
-
-.form__input:user-invalid {  // TODO вадидация стандартными средствами
-  border-color: var(--error);
-  color: var(--primary-50);
-}
-
-
 .form__label {
-  position: absolute;
-  top: 18px;
-  left: 15px;
-  font-family: var(--font-family);
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  padding: 17px 16px;
+  font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-  color: var(--primary-50);
+  color: $primary-50;
   user-select: none;
 
   @include media-tablet {
-    top: 20px;
-    left: 30px;
+    padding: 20px 30px;
   }
+}
+
+.form__input:disabled + .form__label {
+  color: $disabled;
+}
+
+.form__input:focus-visible + .form__label,
+.form__input:required:user-valid + .form__label,
+.form__input:valid + .form__label,
+.form__input:user-invalid + .form__label {
+  visibility: hidden;
+}
+
+.form__input:user-invalid {
+  border-color: $basic-red;
+  color: $primary-50;
 }
 
 .form__submit {

@@ -7,6 +7,7 @@
   <meta name="title" content="Путешествия с LIFETOUR">
   <meta name="description" content="Туристическое агентство - организация путешествий, походов, поездок, восхождений.">
   <title>LIFETOUR</title>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="icon" sizes="32x32" href="favicons/favicon.png" type="image/png">
   <link rel="manifest" crossorigin="use-credentials" href="manifest.webmanifest">
@@ -881,7 +882,7 @@
         <ul class="gallery-swiper__list swiper-wrapper">
 
           <li class="gallery__item gallery__item--one gallery-swiper__item swiper-slide">
-            <div class="gallery__card gallery-card">
+            <div class="gallery__card">
 
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -907,7 +908,7 @@
           </li>
 
           <li class="gallery__item gallery__item--two gallery-swiper__item swiper-slide">
-            <div class="gallery__card gallery-card">
+            <div class="gallery__card">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
                   srcset="img/gallery/image-2-desktop@1x.webp, img/gallery/image-2-desktop@2x.webp 2x" width="284"
@@ -951,7 +952,7 @@
           </li>
 
           <li class="gallery__item gallery__item--one gallery-swiper__item swiper-slide">
-            <div class="gallery__card gallery-card">
+            <div class="gallery__card">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
                   srcset="img/gallery/image-4-desktop@1x.webp, img/gallery/image-4-desktop@2x.webp 2x" width="284"
@@ -975,7 +976,7 @@
           </li>
 
           <li class="gallery__item gallery__item--two gallery-swiper__item swiper-slide">
-            <div class="gallery__card gallery-card">
+            <div class="gallery__card">
 
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -1021,29 +1022,27 @@
           </li>
 
           <li class="gallery__item gallery__item--one gallery-swiper__item swiper-slide">
-            <div class="gallery__card gallery-card">
+            <div class="gallery__card ">
 
-              <div class="gallery__card gallery-card">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/gallery/image-7-desktop@1x.webp, img/gallery/image-7-desktop@2x.webp 2x" width="284"
-                    height="463">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/gallery/image-7-desktop@1x.webp, img/gallery/image-7-desktop@2x.webp 2x" width="253"
-                    height="418">
-                  <source srcset="img/gallery/image-7-desktop@1x.webp 1x, img/gallery/image-7-desktop@2x.webp 2x"
-                    type="image/webp" width="158" height="266">
-                  <source type="image/jpg" media="(min-width: 1440px)"
-                    srcset="img/gallery/image-7-desktop@1x.jpg, img/gallery/image-7-desktop@2x.jpg 2x" width="284"
-                    height="463">
-                  <source type="image/jpg" media="(min-width: 768px)"
-                    srcset="img/gallery/image-7-desktop@1x.jpg, img/gallery/image-7-desktop@2x.jpg 2x" width="253"
-                    height="418">
-                  <img class="gallery__image" src="img/gallery/image-7-desktop@1x.jpg"
-                    srcset="img/gallery/image-7-desktop@2x.jpg 2x" width="158" height="266"
-                    alt="Двое парней разводят костер." loading="lazy">
-                </picture>
-              </div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/gallery/image-7-desktop@1x.webp, img/gallery/image-7-desktop@2x.webp 2x" width="284"
+                  height="463">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery/image-7-desktop@1x.webp, img/gallery/image-7-desktop@2x.webp 2x" width="253"
+                  height="418">
+                <source srcset="img/gallery/image-7-desktop@1x.webp 1x, img/gallery/image-7-desktop@2x.webp 2x"
+                  type="image/webp" width="158" height="266">
+                <source type="image/jpg" media="(min-width: 1440px)"
+                  srcset="img/gallery/image-7-desktop@1x.jpg, img/gallery/image-7-desktop@2x.jpg 2x" width="284"
+                  height="463">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="img/gallery/image-7-desktop@1x.jpg, img/gallery/image-7-desktop@2x.jpg 2x" width="253"
+                  height="418">
+                <img class="gallery__image" src="img/gallery/image-7-desktop@1x.jpg"
+                  srcset="img/gallery/image-7-desktop@2x.jpg 2x" width="158" height="266"
+                  alt="Двое парней разводят костер." loading="lazy">
+              </picture>
 
             </div>
           </li>
@@ -1065,12 +1064,12 @@
         <form class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
 
           <div class="form__group">
-            <input class="form__input" id="phone" type="tel" name="phone" placeholder=" " required>
+            <input class="form__input" id="phone" type="tel" name="phone" required>
             <label class="form__label" for="phone">Телефон</label>
           </div>
 
           <div class="form__group">
-            <input class="form__input" id="email" type="text" name="email" placeholder=" " required>
+            <input class="form__input" id="email" type="text" name="email" required>
             <label class="form__label" for="email">Email</label>
           </div>
 
@@ -1190,30 +1189,6 @@
 
 </html>
 
-
-
-<!-- пример использования спрайта -->
-<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-  <svg>
-    <use href="/__spritemap#sprite-user"></use>
-  </svg> -->
-
-<!-- background-image: -->
-<!-- image-set(
-        url("../img/price/plates@2x.webp") type("image/webp") 2x,
-        url("../img/price/plates@1x.webp") type("image/webp") 1x,
-        url("../img/price/plates@2x.jpg") 2x,
-        url("../img/price/plates@1x.jpg") 1x
-        ); -->
-
-
-<!-- TODO удалить favicon webp -->
-<!-- TODO HTML2-Д1. проверить svg -->
-<!-- TODO Оставить браузерную обводку -->
-
 <!-- TODO удалить закоментированный код css -->
-<!-- Проверить высоту картинок -->
-<!-- анимацию на интерактивные элементы -->
-<!-- карта на мобилке и планшете -->
-<!-- отступ на мобилке .reviews-swiper -->
-<!-- пагинация поправит размеры булетов -->
+<!-- отступ на мобилке .reviews-swiper ждем ответ -->
+<!-- шаблон для дублирующих слайдов и поправить js -->

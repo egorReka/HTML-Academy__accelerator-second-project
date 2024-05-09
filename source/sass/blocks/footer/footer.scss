@@ -21,6 +21,7 @@
   @include media-tablet {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     margin-bottom: 34px;
   }
 
@@ -37,7 +38,7 @@
   width: 142px;
   height: 42px;
   margin: 0 auto 15px;
-  color: var(--primary);
+  color: $primary;
 
   @include media-tablet {
     margin: 0 auto 0 0;
@@ -50,6 +51,7 @@
 
 .footer__list {
   @include reset-list;
+
   column-count: 2;
   column-gap: 50px;
   margin-bottom: 16px;
@@ -100,12 +102,13 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: -0.0095em;
+    letter-spacing: -0.01em;
   }
 }
 
 .footer__social {
   @include reset-list;
+
   margin-bottom: 23px;
 
   @include media-tablet {

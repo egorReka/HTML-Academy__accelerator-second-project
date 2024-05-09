@@ -1,22 +1,23 @@
 .link {
   @include reset-link;
-  color: var(--primary);
+
+  color: $primary;
   transition: 0.2s color ease-in-out;
 
   &:hover {
-    color: var(--additional-20);
+    color: $additional-20;
   }
 
   &:focus {
-    color: var(--additional-100);
+    color: $additional-100;
   }
 
   &:active {
-    color: var(--active);
+    color: $basic-blue;
   }
 
   &:not([href]) {
-    color: var(--disabled);
+    color: $disabled;
     pointer-events: none;
   }
 }

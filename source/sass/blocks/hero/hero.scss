@@ -1,4 +1,46 @@
 .hero {
   display: grid;
+  grid-template-rows: 1fr auto;
   position: relative;
+
+  @include media-desktop {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+  }
+}
+
+.hero__container  {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+
+  @include media-desktop {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+}
+
+.hero__pagination  {
+  @include reset-list;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  align-self: flex-start;
+  justify-self: center;
+  max-width: $width-phone - ($padding-phone * 2);
+  min-height: 40px;
+  margin-bottom: 16px;
+
+  @include media-tablet {
+    max-width: $width-tablet - ($padding-tablet * 2);
+    margin-bottom: 20px;
+  }
+
+  @include media-desktop {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: flex-end;
+    align-self: flex-end;
+    max-width: 270px;
+    min-height: auto;
+    margin: 93px 121px 93px 10px;
+  }
 }

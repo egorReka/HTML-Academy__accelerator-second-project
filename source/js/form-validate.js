@@ -1,6 +1,7 @@
 const ErrorMessages = {
   valueMissing: 'Заполните поле',
-  typeMismatch: 'Некорректное значение',
+  phone: 'Пожалуйста, введите корректный номер телефона.',
+  email: 'Пожалуйста, введите корректный адрес электронной почты',
 };
 
 const Regex = {
@@ -9,12 +10,13 @@ const Regex = {
 };
 
 const form = document.querySelector('.form__wrapper');
+const inputs = document.querySelectorAll('.form__input');
 
 const validateCastomRegex = (typeInput, input) => {
   const inputValue = input.value;
 
   if (!Regex[typeInput].test(inputValue)) {
-    input.setCustomValidity(ErrorMessages.typeMismatch);
+    input.setCustomValidity(ErrorMessages[typeInput]);
 
   } else {
     input.setCustomValidity('');
@@ -24,7 +26,6 @@ const validateCastomRegex = (typeInput, input) => {
 function validateInput(input) {
   input.setCustomValidity('');
 
-  // Общая валидация браузерного API
   if (input.validity.valueMissing) {
     input.setCustomValidity(ErrorMessages.valueMissing);
 
@@ -33,7 +34,6 @@ function validateInput(input) {
     input.setCustomValidity('');
   }
 
-  // Кастомная валидация по type input
   switch (input.name) {
     case 'phone':
       validateCastomRegex('phone', input);
@@ -55,7 +55,6 @@ const isValidInput = (evt) => {
 
 const isValidForm = (evt) => {
   evt.preventDefault();
-  const inputs = document.querySelectorAll('.form__input');
   let valid = false;
 
   inputs.forEach((input) => {
@@ -68,11 +67,18 @@ const isValidForm = (evt) => {
 
   if (valid) {
     form.submit();
+
+    inputs.forEach((input) => {
+      input.value = '';
+    });
   }
 };
 
-
 const initValidationForm = () => {
+  inputs.forEach((input) => {
+    validateInput(input);
+  });
+
   form.addEventListener('input', isValidInput);
   form.addEventListener('submit', isValidForm);
 };

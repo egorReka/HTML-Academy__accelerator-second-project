@@ -20,7 +20,7 @@
     display: block;
     width: 80px;
     height: 1px;
-    background: var(--white-100);
+    background: $white-100;
     opacity: 0.2;
     content: "";
   }
@@ -47,33 +47,33 @@
   width: 84px;
   height: 16px;
 
-  background-image: url('/__spritemap#sprite-stars-filled-view');
+  background-image: url("/__spritemap#sprite-stars-filled-view");
   background-size: 84px 16px;
   background-repeat: no-repeat;
   background-position: 0 center;
 
-  mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white 0%, transparent 0%);
+  mask-image: url("/__spritemap#sprite-stars-stroke-view"), linear-gradient(to right, $white-100 0%, $white-100 0%, transparent 0%);
   mask-size: 84px 16px;
   mask-repeat: no-repeat;
-  mask-position: 0px center;
+  mask-position: 0 center;
 
   &--one {
-    mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white calc(16px * 1), transparent 0%);
+    mask-image: url("/__spritemap#sprite-stars-stroke-view"), linear-gradient(to right, $white-100 0%, $white-100 calc(16px * 1), transparent 0%);
   }
 
   &--two {
-    mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white calc(16px * 2), transparent 0%);
+    mask-image: url("/__spritemap#sprite-stars-stroke-view"), linear-gradient(to right, $white-100 0%, $white-100 calc(16px * 2), transparent 0%);
   }
 
   &--three {
-    mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white calc(16px * 3), transparent 0%);
+    mask-image: url("/__spritemap#sprite-stars-stroke-view"), linear-gradient(to right, $white-100 0%, $white-100 calc(16px * 3), transparent 0%);
   }
 
   &--four {
-    mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white calc(16px * 4), transparent 0%);
+    mask-image: url("/__spritemap#sprite-stars-stroke-view"), linear-gradient(to right, $white-100 0%, $white-100 calc(16px * 4), transparent 0%);
   }
 
   &--five {
-    mask-image: url('/__spritemap#sprite-stars-stroke-view'), linear-gradient(to right, white 0%, white calc(16px * 5), transparent 0%);
+    mask-image: url("/__spritemap#sprite-stars-stroke-view"), linear-gradient(to right, $white-100 0%, $white-100 calc(16px * 5), transparent 0%);
   }
 }

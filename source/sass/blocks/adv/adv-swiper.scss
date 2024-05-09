@@ -1,6 +1,7 @@
 
 .adv-swiper__list.swiper-wrapper {
   @include reset-list;
+
   flex-direction: column;
   gap: 15px;
   width: $width-phone - ($padding-phone * 2);
@@ -25,7 +26,7 @@
   }
 }
 
-.adv-swiper__item--double.swiper-slide{
+.adv-swiper__item--double.swiper-slide {
   display: none;
 
   @include media-desktop {

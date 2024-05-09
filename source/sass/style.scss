@@ -11,8 +11,6 @@
 @import "./blocks/subtitle";
 @import "./blocks/button";
 @import "./blocks/link";
-
-/* LAYOUT */
 @import "./blocks/header/header";
 @import "./blocks/header/nav";
 @import "./blocks/hero/hero";
@@ -23,22 +21,21 @@
 @import "./blocks/tours/tours-swiper";
 @import "./blocks/tours/tours-card";
 @import "./blocks/tours/tours-details";
-@import "./blocks//tours/tours-labels.scss";
+@import "./blocks/tours/tours-labels.scss";
 @import "./blocks/training/training";
 @import "./blocks/training/training-card";
 @import "./blocks/training/training-swiper";
-@import "./blocks/training/training-details.scss";
-@import "./blocks/about/about.scss";
+@import "./blocks/training/training-details";
+@import "./blocks/about/about";
 @import "./blocks/reviews/reviews";
 @import "./blocks/reviews/reviews-swiper";
 @import "./blocks/reviews/reviews-card";
-@import "./blocks/adv/adv.scss";
-@import "./blocks/adv/adv-swiper.scss";
-@import "./blocks/adv/adv-card.scss";
-@import "./blocks/gallery/gallery.scss";
-@import "./blocks/gallery/gallery-swiper.scss";
-@import "./blocks/gallery/gallery-card.scss";
-@import "./blocks/form/form.scss";
-@import "./blocks/contact/contact.scss";
-@import "./blocks/footer/footer.scss";
-@import "./blocks/footer/social.scss";
+@import "./blocks/adv/adv";
+@import "./blocks/adv/adv-swiper";
+@import "./blocks/adv/adv-card";
+@import "./blocks/gallery/gallery";
+@import "./blocks/gallery/gallery-swiper";
+@import "./blocks/form/form";
+@import "./blocks/contact/contact";
+@import "./blocks/footer/footer";
+@import "./blocks/footer/social";

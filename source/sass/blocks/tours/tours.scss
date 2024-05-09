@@ -66,6 +66,7 @@
 
 .tours__link {
   @include reset-link;
+
   position: relative;
   display: block;
   margin: 0 auto;
@@ -89,42 +90,42 @@
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
-    background-color: var(--primary);
+    background-color: $primary;
     transition: 0.2s background-color ease-in-out;
     content: "";
   }
 
   &:hover {
-    color: var(--additional-20);
+    color: $additional-20;
 
     &::after {
-      background-color: var(--additional-20);
+      background-color: $additional-20;
     }
   }
 
   &:focus {
-    color: var(--additional-100);
+    color: $additional-100;
 
     &::after {
-      background-color: var(--additional-100);
+      background-color: $additional-100;
     }
   }
 
   &:active {
-    color: var(--active);
+    color: $basic-blue;
 
     &::after {
-      background-color: var(--active);
+      background-color: $basic-blue;
     }
   }
 
   &:disabled,
   &:not([href]) {
-    color: var(--disabled);
+    color: $disabled;
     pointer-events: none;
 
     &::after {
-      background-color: var(--disabled);
+      background-color: $disabled;
     }
   }
 

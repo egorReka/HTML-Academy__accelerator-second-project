@@ -1,4 +1,4 @@
-import {disablesFocusHiddenSlides} from './utils';
+import {disablesFocusHiddenSlides} from './swiper-utils';
 
 const heroSwiper = document.querySelector('.hero__container');
 const heroButtonClass = 'hero-card__button';
@@ -17,7 +17,7 @@ const initSwiperHiro = (Swiper, Pagination) => {
       bulletElement: 'li',
       clickable: true,
       renderBullet: function (index, className) {
-        return `<li class="${className}"><button class="hero-pagination__button" type="button"><span class="visually-hidden">Слайд ${index + 1}></span></button></li>`; // TODO visibleted-hidden 1 2 3
+        return `<li class="${className}"><button class="hero-pagination__button" type="button"><span class="visually-hidden">Слайд ${index + 1}></span></button></li>`;
       },
     },
     on: {

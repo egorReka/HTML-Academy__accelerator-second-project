@@ -5,11 +5,11 @@ import 'swiper/css/pagination';
 
 import { initNavToggle } from './nav-toggle';
 import { initSwiperHiro } from './swiper-hero';
-import { initSwiperTours } from './tours-swiper';
-import { initSwiperTraining } from './training-swiper';
-import { initSwiperReviews } from './reviews-swiper';
+import { initSwiperTours } from './swiper-tours';
+import { initSwiperTraining } from './swiper-training';
+import { initSwiperReviews } from './swiper-reviews';
 import { initSwiperAdv } from './swiper-adv';
-import { initSwiperGallery } from './gallery-swiper';
+import { initSwiperGallery } from './swiper-gallery';
 import { initValidationForm } from './form-validate';
 
 initNavToggle();

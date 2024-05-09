@@ -1,19 +1,25 @@
 .gallery-swiper {
-  // width: 100%;
-}
-
-.gallery-swiper__list.swiper-wrapper {
-  @include reset-list;
   width: 100%;
-  max-width: $width-phone; // TODO исправить - полоса прокрутки
+  height: 100%;
   margin: 0 auto;
-
-  @include media-tablet {
-    max-width: $width-tablet;
-  }
 
   @include media-desktop {
     max-width: $width-desktop;
   }
 }
 
+.gallery-swiper__list.swiper-wrapper {
+  @include reset-list;
+
+  @include media-desktop {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+  }
+}
+
+.gallery-swiper__item.swiper-slide {
+  @include media-desktop {
+    width: auto;
+  }
+}

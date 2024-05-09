@@ -4,6 +4,7 @@ const initSwiperReviews = (Swiper, Navigation) => {
     loop: false,
     simulateTouch: false,
     slidesPerView: 'auto',
+    // autoHeight: true, // TODO ждем ответа
     navigation: {
       nextEl: '.reviews__button--next',
       prevEl: '.reviews__button--prev',
@@ -36,7 +37,7 @@ const initSwiperReviews = (Swiper, Navigation) => {
 
     if (desktopWidth.matches) {
       if (isActiveFirstSlide) {
-        reviewsSwiper.style.transform = 'translateX(120px)';
+        reviewsSwiper.style.transform = 'translateX(130px)';
       } else {
         reviewsSwiper.style.transform = 'translateX(0)';
       }

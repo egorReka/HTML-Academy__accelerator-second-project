@@ -1,11 +1,11 @@
 .adv-card {
-  padding: 19px 9px 19px;
+  padding: 19px 9px;
   min-height: 237px;
-  border: 1px solid var(--additional-20);
+  border: 1px solid $additional-20;
 
   &::before {
     display: block;
-    border: 1px solid var(--additional-100);
+    border: 1px solid $additional-100;
     padding: 8px;
     margin: 0 auto 20px;
     width: 41px;
@@ -16,39 +16,29 @@
     content: "";
   }
 
-  &--shield {
-    &::before {
-      background-image: url("/__spritemap#sprite-shield-view");
-    }
+  &--shield::before {
+    background-image: url("/__spritemap#sprite-shield-view");
   }
 
-  &--crown {
-    &::before {
-      background-image: url("/__spritemap#sprite-crown-view");
-    }
+  &--crown::before {
+    background-image: url("/__spritemap#sprite-crown-view");
   }
 
-  &--boots {
-    &::before {
-      background-image: url("/__spritemap#sprite-boots-blue-view");
-    }
+  &--boots::before {
+    background-image: url("/__spritemap#sprite-boots-blue-view");
   }
 
-  &--path {
-    &::before {
-      background-image: url("/__spritemap#sprite-path-view");
-    }
+  &--path::before {
+    background-image: url("/__spritemap#sprite-path-view");
   }
 
-  &--leaf {
-    &::before {
-      background-image: url("/__spritemap#sprite-leaf-view");
-    }
+  &--leaf::before {
+    background-image: url("/__spritemap#sprite-leaf-view");
   }
 
   @include media-tablet {
     min-height: 340px;
-    padding: 29px 19px 28px 19px;
+    padding: 29px 19px 28px;
 
     &::before {
       width: 48px;
@@ -70,7 +60,7 @@
 }
 
 .adv-card h3 {
-  margin: 15px 0 15px;
+  margin: 15px 0;
   font-weight: 600;
   font-size: 14px;
   line-height: 105%;

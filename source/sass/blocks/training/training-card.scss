@@ -2,15 +2,14 @@
   height: 100%;
   min-height: 356px;
   padding: 15px;
-  outline: 1px solid var(--additional-20);
-  background-color: var(--white-100);
+  outline: 1px solid $additional-20;
+  background-color: $white-100;
 }
 
 .training-card__image-wrapper {
   position: relative;
   width: 260px;
   height: 200px;
-  // overflow: hidden;
 
   @include media-tablet {
     width: 182px;
@@ -34,8 +33,7 @@
 
   @include media-tablet {
     height: 200px;
-    // object-position: center -2px;
-    object-fit: none; // TODO 5 слайд ломает проверить ?
+    object-fit: none;
   }
 }
 
@@ -47,7 +45,7 @@
 
   @include media-tablet {
     line-height: 114%;
-    color: var(--primary);
+    color: $primary;
   }
 
   @include media-desktop {
@@ -77,17 +75,18 @@
 
 .training-card__link {
   @include reset-link;
+
   display: grid;
   place-content: center;
   width: 24px;
   height: 24px;
   margin-top: 15px;
   padding: 8px 5px;
-  border: 1px solid var(--border-30);
+  border: 1px solid $primary-30;
   transition: 0.2s border-color ease-in-out, 0.2s color ease-in-out, 0.2s background-color ease-in-out;
 
   &:hover {
-    border-color: var(--primary);
+    border-color: $primary;
   }
 
   &:focus-visible {
@@ -95,14 +94,14 @@
   }
 
   &:active {
-    border-color: var(--additional-100);
-    background-color: var(--additional-100);
-    color: var(--white-100);
+    border-color: $additional-100;
+    background-color: $additional-100;
+    color: $white-100;
   }
 
   &:not([href]) {
-    color: var(--border-30);
-    border-color: var(--border-30);
+    color: $primary-30;
+    border-color: $primary-30;
     pointer-events: none;
   }
 }
@@ -111,4 +110,3 @@
   width: 14px;
   height: 8px;
 }
-

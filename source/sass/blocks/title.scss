@@ -10,18 +10,19 @@
   &--secondary {
     position: relative;
     font-size: 22px;
-
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      font-size: 26px;
-      opacity: 0.03;
-      transform: translateY(-60%);
-      content: attr(data-content);
-    }
   }
+
+  &--secondary::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 26px;
+    opacity: 0.03;
+    transform: translateY(-60%);
+    content: attr(data-content);
+  }
+
 
   @include media-tablet {
     font-size: 56px;
@@ -32,11 +33,11 @@
 
     &--secondary {
       font-size: 25px;
+    }
 
-      &::after {
-        font-size: 40px;
-        transform: translateY(-30%);
-      }
+    &--secondary::after {
+      font-size: 40px;
+      transform: translateY(-30%);
     }
   }
 
@@ -49,10 +50,10 @@
 
     &--secondary {
       font-size: 35px;
+    }
 
-      &::after {
-        font-size: 55px;
-      }
+    &--secondary::after {
+      font-size: 55px;
     }
   }
 }

@@ -1,10 +1,11 @@
 .hero-pagination.swiper-pagination {
-  @include reset-list;
-
+  position: static;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 21px;
+  z-index: 1;
 
   --swiper-pagination-bullet-size: 15px;
   --swiper-pagination-color: transparent;
@@ -12,50 +13,48 @@
   --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-bullet-horizontal-gap: 0px;
   --swiper-pagination-bullet-vertical-gap: 0px;
-  --swiper-pagination-bottom: 40px;
-
 
   @include media-tablet {
     --swiper-pagination-bullet-size: 19px;
-    --swiper-pagination-bottom: 42px;
   }
 
   @include media-desktop {
-    position: absolute;
     justify-content: flex-end;
-    padding-right: $padding-desktop;
-
-    --swiper-pagination-bottom: 94px;
   }
 }
 
 .hero-pagination__button {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   padding: 0;
   margin: 0;
   border-radius: 50%;
-  border: 1px solid var(--white-100);
+  border: 1px solid $white-100;
   background-color: transparent;
   user-select: none;
   cursor: pointer;
   transition: 0.2s background-color ease-in-out;
 
   &:hover {
-    background-color: var(--bullet-hover);
+    background-color: $light-grey;
   }
 
   &:focus-visible {
-    outline: 1px solid var(--white-50);
+    outline: 1px solid $white-50;
     outline-offset: 1px;
   }
 
   &:active {
-    background-color: var(--white-50);
+    background-color: $white-50;
+  }
+
+  @include media-tablet {
+    width: 20px;
+    height: 20px;
   }
 }
 
 .swiper-pagination-bullet-active > .hero-pagination__button {
-  background-color: var(--white-100);
+  background-color: $white-100;
 }

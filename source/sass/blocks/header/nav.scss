@@ -1,7 +1,7 @@
 .nav {
   max-height: calc(100dvh - 100%);
   padding: 12px 0 48px;
-  background-color: var(--additional-100);
+  background-color: $additional-100;
   overflow-y: scroll;
   scrollbar-width: none;
 
@@ -53,22 +53,22 @@
   transition: 0.3s text-decoration ease-in-out, 0.2s color ease-in-out;
 
   &:hover {
-    text-decoration-color: var(--white-100);
+    text-decoration-color: $white-100;
   }
 
   &:focus-visible {
-    outline: 1px solid var(--white-100);
+    outline: 1px solid $white-100;
     text-decoration: none;
   }
 
   &:active {
-    color: var(--active);
+    color: $basic-blue;
     outline: none;
     text-decoration: none;
   }
 
   &:not([href]) {
-    color: var(--disabled);
+    color: $disabled;
     pointer-events: none;
   }
 
@@ -79,6 +79,6 @@
   @include media-desktop {
     font-weight: 400;
     text-transform: none;
-    letter-spacing: 0.007rem;
+    letter-spacing: 0.01em;
   }
 }

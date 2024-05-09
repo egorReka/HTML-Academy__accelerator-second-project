@@ -5,21 +5,58 @@
   min-height: 416px;
   color: $white-100;
   background-color: $background-fallback;
-}
 
-.tours-card__image-wrapper {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  width: 100%;
-  height: 100%;
-}
+  &::before {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    content: "";
+  }
 
-.tours-card__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: $background-fallback;
+  &--caucasus::before {
+    background-image:
+      image-set(
+        url("../img/tours/tours-slide-1@2x.webp") type("image/webp") 2x,
+        url("../img/tours/tours-slide-1@1x.webp") type("image/webp") 1x,
+        url("../img/tours/tours-slide-1@2x.jpg") 2x,
+        url("../img/tours/tours-slide-1@1x.jpg") 1x
+      );
+  }
+
+  &--altai::before {
+    background-image:
+      image-set(
+        url("../img/tours/tours-slide-2@2x.webp") type("image/webp") 2x,
+        url("../img/tours/tours-slide-2@1x.webp") type("image/webp") 1x,
+        url("../img/tours/tours-slide-2@2x.jpg") 2x,
+        url("../img/tours/tours-slide-2@1x.jpg") 1x
+      );
+  }
+
+  &--adygea::before {
+    background-image:
+      image-set(
+        url("../img/tours/tours-slide-3@2x.webp") type("image/webp") 2x,
+        url("../img/tours/tours-slide-3@1x.webp") type("image/webp") 1x,
+        url("../img/tours/tours-slide-3@2x.jpg") 2x,
+        url("../img/tours/tours-slide-3@1x.jpg") 1x
+      );
+  }
+
+  &--ural::before {
+    background-image:
+      image-set(
+        url("../img/tours/tours-slide-4@2x.webp") type("image/webp") 2x,
+        url("../img/tours/tours-slide-4@1x.webp") type("image/webp") 1x,
+        url("../img/tours/tours-slide-4@2x.jpg") 2x,
+        url("../img/tours/tours-slide-4@1x.jpg") 1x
+      );
+  }
 }
 
 .tours-card__content {

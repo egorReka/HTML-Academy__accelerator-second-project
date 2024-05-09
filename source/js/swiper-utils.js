@@ -12,4 +12,21 @@ const disablesFocusHiddenSlides = (container, elementClass) => {
   });
 };
 
-export { disablesFocusHiddenSlides };
+const appendCloneSlide = (list, item, count) => {
+  for (let i = 0; i < count; i++) {
+    const cloneItem = item.cloneNode(true);
+
+    cloneItem.dataset.clone = true;
+    list.appendChild(cloneItem);
+  }
+};
+
+const removeCloneSlide = (swiper) => {
+  const cloneSlides = swiper.querySelectorAll('[data-clone]');
+
+  cloneSlides.forEach((slide) => {
+    slide.remove();
+  });
+};
+
+export { disablesFocusHiddenSlides, appendCloneSlide, removeCloneSlide };

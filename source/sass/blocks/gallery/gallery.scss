@@ -32,10 +32,6 @@
 
   @include media-desktop {
     margin: 21px 0 20px;
-
-    &::after {
-      transform: translateY(-20%);
-    }
   }
 }
 

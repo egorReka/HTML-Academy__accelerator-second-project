@@ -14,24 +14,24 @@
   margin: 16px 0 37px;
   text-align: center;
 
-  &::after {
-    transform: translate(17%, -50%);
-  }
-
   @include media-tablet {
     margin: 20px 0 61px;
-
-    &::after {
-      transform: translate(51%, -30%);
-    }
   }
 
   @include media-desktop {
     margin: 22px 0 50px;
+  }
+}
 
-    &::after {
-      transform: translate(80%, -55%);
-    }
+.adv__title > .title__shadow {
+  transform: translate(36px, -11px);
+
+  @include media-tablet {
+    transform: translate(51%, -7px);
+  }
+
+  @include media-desktop {
+    transform: translate(80%, -19px);
   }
 }
 

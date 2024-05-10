@@ -25,24 +25,22 @@
 .reviews__title {
   margin: 16px 0 17px;
 
-  &::after {
-    transform: translateY(-50%);
-  }
-
   @include media-tablet {
     margin: 20px 0 21px;
-
-    &::after {
-      transform: translateY(-30%);
-    }
   }
 
   @include media-desktop {
     margin: 45px 0 21px;
+  }
+}
 
-    &::after {
-      transform: translateY(-80%);
-    }
+.reviews__title > .title__shadow {
+  @include media-tablet {
+    transform: translateY(-7px);
+  }
+
+  @include media-desktop {
+    transform: translateY(-28px);
   }
 }
 

@@ -39,6 +39,14 @@
   }
 }
 
+.tours__title > .title__shadow {
+  transform: translateY(-13px);
+
+  @include media-tablet {
+    transform: translateY(-8px);
+  }
+}
+
 .tours__buttons {
   display: none;
 

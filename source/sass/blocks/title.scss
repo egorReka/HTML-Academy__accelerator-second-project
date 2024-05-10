@@ -12,18 +12,6 @@
     font-size: 22px;
   }
 
-  &--secondary::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    font-size: 26px;
-    opacity: 0.03;
-    transform: translateY(-60%);
-    content: attr(data-content);
-  }
-
-
   @include media-tablet {
     font-size: 56px;
 
@@ -33,11 +21,6 @@
 
     &--secondary {
       font-size: 25px;
-    }
-
-    &--secondary::after {
-      font-size: 40px;
-      transform: translateY(-30%);
     }
   }
 
@@ -51,9 +34,24 @@
     &--secondary {
       font-size: 35px;
     }
+  }
+}
 
-    &--secondary::after {
-      font-size: 55px;
-    }
+.title__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  font-size: 26px;
+  opacity: 0.03;
+  transform: translateY(-11px);
+
+  @include media-tablet {
+    font-size: 40px;
+    transform: translateY(-7px);
+  }
+
+  @include media-desktop {
+    font-size: 55px;
   }
 }

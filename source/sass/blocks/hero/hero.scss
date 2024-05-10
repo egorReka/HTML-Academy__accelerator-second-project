@@ -9,7 +9,7 @@
   }
 }
 
-.hero__container  {
+.hero__container {
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
 
@@ -19,8 +19,9 @@
   }
 }
 
-.hero__pagination  {
+.hero__pagination {
   @include reset-list;
+
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
   align-self: flex-start;

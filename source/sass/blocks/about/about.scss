@@ -86,10 +86,18 @@
 
   @include media-desktop {
     margin: 44px 0 40px;
+  }
+}
 
-    &::after {
-      transform: translateY(-78%);
-    }
+.about__title > .title__shadow {
+  transform: translateY(-12px);
+
+  @include media-tablet {
+    transform: translateY(-8px);
+  }
+
+  @include media-desktop {
+    transform: translateY(-28px);
   }
 }
 

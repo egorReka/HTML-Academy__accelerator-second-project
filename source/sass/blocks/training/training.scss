@@ -35,6 +35,18 @@
   }
 }
 
+.training__title > .title__shadow {
+  transform: translateY(-14px);
+
+  @include media-tablet {
+    transform: translateY(-8px);
+  }
+
+  @include media-desktop {
+    transform: translateY(-7px);
+  }
+}
+
 .training__text {
   max-width: 820px;
 }

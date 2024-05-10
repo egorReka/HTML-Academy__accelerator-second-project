@@ -4,7 +4,7 @@ const initSwiperReviews = (Swiper, Navigation) => {
     loop: false,
     simulateTouch: false,
     slidesPerView: 'auto',
-    // autoHeight: true, // TODO ждем ответа
+    // autoHeight: true,
     navigation: {
       nextEl: '.reviews__button--next',
       prevEl: '.reviews__button--prev',

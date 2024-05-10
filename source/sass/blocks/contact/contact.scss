@@ -191,8 +191,10 @@
 
 .contact__map-wrapper {
   @include media-desktop {
-    display: grid;
-    align-content: center;
+    align-self: center;
+    width: 600px;
+    height: 324px;
+    background-color: $background-fallback-map;
   }
 }
 
